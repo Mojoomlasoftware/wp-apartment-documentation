@@ -40,7 +40,7 @@ rel="stylesheet" type="text/css">
         		<div class="col-md-3 logo"> <a href="index.html"><img src="images/mojoomla_logo.png" width="150" id="img-logo" alt="logo"></a> </div>
         			<div class="col-md-8 col-md-offset-1 desc">
           				<h4 class="slight">Apartment Management System</h4>
-          				<h5 class="slight"><small> Documented by Mojoomla - at June 09 2023</small></h5>
+          				<h5 class="slight"><small> Documented by Mojoomla - at Sep 02 2023</small></h5>
        				</div>
      			</div>
       <div class="col-md-4">
@@ -49,16 +49,16 @@ rel="stylesheet" type="text/css">
 				<ul id="top-menu">
 					<li><a class="current" href="#Introduction">Introduction</a></li>
 					<li><a href="#Installation">Installation</a></li>
+					<li><a href="#system_setting">System Setting</a></li>
+					<li><a href="#fronted-login">Fronted Login Page</a></li>
+					<li><a href="#fronted-theme">Demo Theme Setup</a></li>
+					<li><a href="#setting-up-Language">setting up Language</a></li>
 					<li><a href="#admin_view">Admin view</a></li>
 					<li><a href="#staff-member-view">Staff Member</a></li>
 					<li><a href="#member-member-view">Member</a></li>
 					<li><a href="#accountant-view">Accountant</a></li>
-					<li><a href="#gatekeeper-view">Gatekeeper</a></li>		
-					<li><a href="#fronted-login">Fronted Login Page</a></li>
-					<li><a href="#fronted-theme">Demo Theme Setup</a></li>
-					
+					<li><a href="#gatekeeper-view">Gatekeeper</a></li>
 					<li><a href="#FAQ">FAQ</a></li>
-					<li><a href="#setting-up-Language">setting up Language</a></li>
 				</ul>
         </aside>
       </div>
@@ -68,7 +68,7 @@ rel="stylesheet" type="text/css">
             <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.png"  id="img-logo" alt="logo"></a> </div>
             <div class="col-md-8 col-md-offset-1 desc">
               <h4 class="slight">Apartment Management System</h4>
-              <h5 class="slight"><small> Documented by Mojoomla</a> - at June 09 2023</small></h5>
+              <h5 class="slight"><small> Documented by Mojoomla</a> - at Sep 02 2023</small></h5>
             </div>
           </div>
           <hr class="vertical-space2">
@@ -123,29 +123,163 @@ rel="stylesheet" type="text/css">
             
             <hr>
 		</section>
-            
+
+		<section id="system_setting">
+				<h3><strong>C)  System Setting</strong></h3>
+				<h4><strong>1) Licence Settings</strong></h4>
+				<p>Click on <strong>Licence Settings</strong> under apartment management link-list to start setting up the system. Please fill all required fields. You can access plugin only after successfully registration of your Envanto License key. You can use single licence key for only single domain. Same licence key can't user for different domains. </p>
+				<img alt="" src="images/screenshot/licence-settings.png">
+				<br>
+				<br>
+				<ul>
+				
+				<ol>
+					<li><strong>Domain :</strong> This is your domain name. You not need ot enter it. System automatically take it. </li>
+					<li><a href="https://www.dasinfomedia.com/how-to-find-codecanyon-purchase-key/"><strong>How to find your license key (purchase code)</strong></a></li>
+					<li><strong>Envanto License key: </strong>Enter envanto licence key of the apartment. </li>
+					<li><strong>Email: </strong>Enter your email.</li>
+				</ol>
+				</ul>
+				<hr>
+			</section>
+			<section id="setup_wizard">
+					<h4><strong>2) Setup Wizard</strong></h4>
+				
+					<img alt="" src="images/screenshot/setup_wizard.png">
+					<br>
+					<br>
+					<p>This all step follow for complate setup wizard. </p>
+					<ul>
+					
+					<ol>
+						<li><strong>General Setting:</strong>You can set all the settings as per your requirement by clicking on General Settings. </li>
+						<li><strong>Add Residential Unit: </strong>You can add residential unit by clicking on Add Residential Unit. </li>
+						<li><strong>Add Member: </strong>You can add member by clicking on Add Member. </li>
+						<li><strong>Add Document: </strong>You can add member's document by clicking on Add Document. </li>
+						<li><strong>Add Invoice: </strong>You can create invoice by clicking on Add Invoice. </li>
+					</ol>
+					</ul>
+					
+				<hr>
+
+			</section>
+			
+		<section id="fronted-login">
+			<h3><strong>D)  Frontend Login Page</strong></h3>
+			<ol>
+			<section id="login-page-setting">
+			
+				<p> After installing this plugin create login page by adding  menu link as shown in image. </p>
+				<h5><strong><li>Login Page Setting:</li></strong></h5>
+				<img alt="" src="images/login_page_setting.png"><br><br>           
+				<h5><strong><li>Frontend Login Page:</li></strong></h5>
+				<img alt="" src="images/login-page.png"><br><br>           
+				<p>Now all user can login from this login page. </p>
+				<h5><strong><li>Registration Page Setting:</li></strong></h5>
+			<p>For create member registration page you need to simply create menu link.</p>
+				<img alt="" src="images/screenshot/registration-page-settings.png"> <br><br> 
+			<h5><strong><li>Frontend Member Registration Page:</li></strong></h5>
+			<p>When you install plugin registration page will create and set in manu this page on frontend side display like below.</p>
+				<img alt="" src="images/screenshot/registration-page.png">  
+				</ol>
+					<hr>
+				
+		</section>
+				
+		</section>
+		<style>
+		#fronted-theme-setting ol {
+			list-style: disc;
+		}
+		</style>
+		<section id="fronted-theme">
+			<h3><strong>E)  Demo Theme Setup</strong></h3>
+			<ol>
+				<section id="fronted-theme-setting">
+						<h4><strong>1) FTP Upload</strong></h4>
+						<strong>Note: Existing customers please take a full backup of your site.</strong>
+						<ol>
+							<li>Unzip the "
+							<mark>twentytwenty-child.zip</mark>
+							" file</li>
+							<li>Upload the extracted
+							<mark>"twentytwenty-child"</mark>
+							theme folder into "/wp-content / themes/" in your wordpress installation.</li>
+							<li>To Activate the theme, Go to WP admin panel <strong>Appearance > Themes </strong>activate the Twenty Twenty Child theme.</li>
+							<img alt="" src="images/theme/active_theme.png">  
+						</ol>
+						<br/>
+						<h4><strong>2) Set Login and Registration page</strong></h4>
+						<ol>
+							<h5><strong>2.1) Set Login page</strong></h5>	
+							<ol style="font-size: 13px;">
+								<li>To Set Login page go to the WP admin panel <strong>Pages</strong>.</li>
+								<li>Edit the Apartment Management Login Page see the right side page setting on <strong>Template</strong> Dropdown select the <strong>apartment-login</strong></li>
+								<li>Click on Update button. (maybe shown Updating failed. The response is not a valid JSON response. but don't worry about it)</li>
+								<br/>
+								<img alt="" src="images/theme/login_page.png"> 
+								<br/>
+								<br/>
+								</ol>
+								<h5><strong>2.2) Set Registration page</strong></h5>
+								<ol style="font-size: 13px;">
+									<li>To Set Registration page go to the WP admin panel <strong>Pages</strong>.
+									<li>Edit the Apartment Management Member Registration Page see the right side page setting on <strong>Template</strong> Dropdown select the <strong>apartment-registration</strong></li>
+									<li>Click on Update button.</li>
+									<br/>
+									<img alt="" src="images/theme/reg_page.png"> 
+								</ol>
+						</ol>
+						<br/>	
+						<h4><strong>3) WP Menu Create (If not created)</strong></h4>
+						<ol>
+							<li>To Create WP Menu go to the WP admin panel <strong>Appearance > Menus</strong></li> 
+							<li>Insert menu name and select the Desktop Horizontal Menu in Display Location and click on <strong>create menu</strong>.</li>
+							<br/>	
+							<img alt="" src="images/theme/create_menu.png">
+							<br/>	 
+							<br/>	 
+							<li>To add menu items <strong>Add menu items > pages</strong></li>
+							<li>Select <strong>Apartment Management Login Page and Apartment Management Member Registration Page</strong> and click on <strong>Add to Menu</strong></li>
+							<li>After menu items are added to menu then click on <strong>Save Menu</strong> button.</li>
+							<br/>	
+							<img alt="" src="images/theme/menu.png"> 
+						</ol>
+						<br/>	
+						<h4><strong>4) Set Login page as a home page.</strong></h4>
+						<ol>
+							<li>To Set Login page as a home page go to the WP admin panel <strong>Settings > Reading</strong> </li>
+							<li>In Your homepage displays select <strong>A static page </strong></li>
+							<li>In Homepage Select <strong>Apartment Management Login Page</strong> and<strong> click on Save Changes</strong> button.</li>
+							<br/>	
+							<img alt="" src="images/theme/static_page.png">
+						</ol>
+						<br/>	
+						<h5><strong> After Performing All Setup Successfully Visit your Site.</strong></h5>
+				</section>
+			</ol>
+				<hr>
+		</section>
+
+		<section id="setting-up-Language">
+				<h3><strong>F) Setting Up Language</strong></h3>
+				
+				  The steps to do the translation are as follows. For example let us consider French translation.
+					  <ol>
+						  <li>Download and install <strong>Poedit</strong>.</li>
+						  <li>Open the file apartment-management / <strong>languages</strong> folder &rarr; apartment_mgt-fr_FR.po using <strong>Poedit</strong> .</li>
+						  <li>Choose the Source text and set its corresponding French text in Translation Text Area.</li>
+						  <li>Save the changes.</li>
+						  <li>In Admin menu >> Settings >> General >> Site Language >> Select Your Site Language. </li>
+					  </ol>
+			</section>
 		<section id="admin_view">
 		<section id="admin-dasboard">
-				 <h3><strong>C)  Admin View:</strong></h3>
-				 <p><strong>Dashboard:</strong> Admin side dashboard view.</p>
+				 <h3><strong>G)  Admin</strong></h3>
+				 <h4><strong>1) Dashboard</strong></h4>
+				 <p> Admin side dashboard view.</p>
 				<img alt="Install plugin" src="images/screenshot/admin_dashboard.png">
             <hr>
-		</section>
-		<section id="General-Settings">
-			<h4><strong>1) Licence Settings</strong></h4>
-			<p>Click on <strong>Licence Settings</strong> under apartment management link-list to start setting up the system. Please fill all required fields. You can access plugin only after successfully registration of your Envanto License key. You can use single licence key for only single domain. Same licence key can't user for different domains. </p>
-			<img alt="" src="images/screenshot/licence-settings.png">
-			<br>
-			<br>
-			<ul>
-			
-			<ol>
-				<li><strong>Domain :</strong> This is your domain name. You not need ot enter it. System automatically take it. </li>
-				<li><strong>Envanto License key: </strong>Enter envanto licence key of the apartment. </li>
-				<li><strong>Email: </strong>Enter your email.</li>
-			</ol>
-			</ul>
-			<hr>
 		</section>
         <section id="General-Settings">
             <h4><strong>2) General Settings</strong></h4>
@@ -180,6 +314,10 @@ rel="stylesheet" type="text/css">
 				<li><strong>Do You Want To Add Penalty?: </strong>Enable it if you want to add a penalty for late payment.</li>
 				<li><strong>Penalty Days: </strong>Add penalty days for how much after day you want to add a penalty.</li>
 				<li><strong>Penalty Charge %: </strong>Add penalty charge in percentage for late payment.</li>
+				<li><strong>Dashboard Card Setting For Member: </strong>Enable options if you want to give card & visitor's chart view access for member.</li>
+				<li><strong>Dashboard Card Setting For Staff Member: </strong>Enable options if you want to give card & visitor's chart view access for staff member.</li>
+				<li><strong>Dashboard Card Setting For Accountant: </strong>Enable options if you want to give card & visitor's chart view access for accountant.</li>
+				<li><strong>Dashboard Card Setting For Gatekeeper: </strong>Enable options if you want to give card & visitor's chart view access for gatekeeper.</li>
 			</ol>
              
             </ul>
@@ -655,26 +793,50 @@ rel="stylesheet" type="text/css">
 				<h5><strong><li>Units By Building : </li></strong></h5	>
 				<p>Here You can see report units by building.</p>
 				<img alt="report_unit_by_building" src="images/screenshot/report_unit_by_building.png"><br>
-				<h5><strong><li>Number Of Members By Building :</li></strong></h5	> 
-				<p>Here you can see report members by building.</p>
+				<h5><strong><li>Members By Building :</li></strong></h5	> 
+				<p>1.Graph : Here you can see number of members by building Graph report.</p>
 				<img alt="report_member_by_builging" src="images/screenshot/report_member_by_builging.png"><br><br>
-				<h5><strong><li>Payment :</li></strong></h5	> 
+
+				<p>2.Datatable : Here you can see number of members by building Data by Datatable.</p>
+				<img alt="report_member_by_builging" src="images/screenshot/report_member_by_building_datatable.png"><br><br>
+
+				<!-- <h5><strong><li>Payment :</li></strong></h5	> 
 				<p>Here you can see payment report by month.</p>
-				<img alt="report_payment" src="images/screenshot/report_payment.png"><br><br>
-				<h5><strong><li>Expense Report :</li></strong></h5	> 
-				<p>Here you can see Expense report by month.</p>
+				<img alt="report_payment" src="images/screenshot/report_payment.png"><br><br> -->
+				<h4><strong><li>Income-Expense Report </li></strong></h4> 
+				<h5><strong>Income Report :</strong></h5> 
+				<p>1.Graph: Here you can see income graph report.</p>
+				<img alt="report_payment" src="images/screenshot/report_income.png"><br><br>
+				<p>2.Datatable: Here you can see income data by datatable.</p>
+				<img alt="report_payment" src="images/screenshot/report_income_data.png"><br><br>
+				<h5><strong>Expense Report :</strong></h5> 
+				<p>Here you can see Expense graph report.</p>
 				<img alt="report_expense" src="images/screenshot/report_expense.png"><br><br>
-				<h5><strong><li>Complain Status :</li></strong></h5	> 
+				<p>Here you can see Expense data by datatable.</p>
+				<img alt="report_expense" src="images/screenshot/report_expense_data.png"><br><br>
+
+				<h5><strong>Income & Expense Report :</strong></h5> 
+				<p>Here you can see Income & Expense graph report.</p>
+				<img alt="report_expense" src="images/screenshot/report_income_expense.png"><br><br>
+				<p>Here you can see Income & Expense data by datatable.</p>
+				<img alt="report_expense" src="images/screenshot/report_net_profit.png"><br><br>
+
+				<h5><strong><li>Complaint  :</li></strong></h5	> 
+				<h5><strong>Complain Status :</strong></h5	> 
 				<p>Here you can see report complain by status.</p>
 				<img alt="report_complaint_status" src="images/screenshot/report_complaint_status.png"><br><br>
-				
-				<h5><strong><li>Download Income Report :</li></strong></h5	> 
-				<p>Here you can download income report by date.</p>
-				<img alt="report_complaint_status" src="images/screenshot/admin side/download_income_report.png"><br><br>
-				
-				<h5><strong><li>Download Expense Report :</li></strong></h5	> 
-				<p>Here you can download expense report by date.</p>
-				<img alt="report_complaint_status" src="images/screenshot/admin side/download_expense_report.png"><br><br>
+
+				<h5><strong>Maintenance Status :</strong></h5	> 
+				<p>Here you can see report maintenance by status.</p>
+				<img alt="report_complaint_status" src="images/screenshot/report_maintainance.png"><br><br>
+
+				<h5><strong>Request Status :</strong></h5	> 
+				<p>Here you can see report request by status.</p>
+				<img alt="report_complaint_status" src="images/screenshot/report_request.png"><br><br>
+
+				<h5><strong>Suggestion Status :</strong></h5	> 
+				<p>Here you can see report suggestion by status.</p>
+				<img alt="report_complaint_status" src="images/screenshot/report_suggetion.png"><br><br>
 				
 			</ol>						
             <hr>
@@ -727,7 +889,7 @@ rel="stylesheet" type="text/css">
 	</section>
 
 	<section id="staff-member-view">
-		<h3><strong>D)  Staff Member View:</strong></h3>
+		<h3><strong>H)  Staff Member View</strong></h3>
 		<section id="staff-dashboard">
             <h4><strong>1) Dashboard :</strong></h4>	
 			<p>Staff Member's dashboard.</p>
@@ -888,7 +1050,7 @@ rel="stylesheet" type="text/css">
 	</section>
 		
 	<section id="member-member-view">
-		<h3><strong>E) Member View:</strong></h3>
+		<h3><strong>I) Member View</strong></h3>
 		<section id="member-dashboard">
             <h4><strong>1) Dashboard :</strong></h4>	
 			<p>Member's dashboard.</p>
@@ -1069,15 +1231,15 @@ rel="stylesheet" type="text/css">
         </section>
 		
 		<section id="accountant-view">
-		<h3><strong>F) Accountant View:</strong></h3>
+		<h3><strong>J) Accountant View</strong></h3>
 		<section id="accountant-dashboard">
-            <h4><strong>1) Dashboard :</strong></h4>	
+            <h4><strong>1) Dashboard </strong></h4>	
 			<p>Accountant's dashboard.</p>
 			<img alt="dashboard" src="images/accountant/dashboard.png"><br>							
             <hr>
 		</section>
 		<section id="accountant-resident_unit">
-            <h4><strong>2) Resident Unit:</strong></h4>	
+            <h4><strong>2) Resident Unit</strong></h4>	
 			<p>Accountant can only view all units and units member.</p>
 			<img alt="resident_unit" src="images/accountant/resident_unit.png"><br>							
             <hr>
@@ -1145,7 +1307,7 @@ rel="stylesheet" type="text/css">
 
 
 		<section id="accountant-parking-manager">
-            <h4><strong>11) Parking Manager:</strong></h4>	
+            <h4><strong>11) Parking Manager</strong></h4>	
 			<ol>
 				<h5><strong><li>Sloat List : </li></strong></h5	>
 				<p>Accountant can see all view slot .</p>
@@ -1160,7 +1322,7 @@ rel="stylesheet" type="text/css">
 
 	
         <section id="account_manage">
-            <h4><strong>12) Accounts:</strong></h4>	
+            <h4><strong>12) Accounts</strong></h4>	
            
 			<ol>
 				<h5><strong><li>Invoice List : </li></strong></h5	>
@@ -1216,7 +1378,7 @@ rel="stylesheet" type="text/css">
         </section>
 		
 	<section id="gatekeeper-view">
-		<h3><strong>G) Gatekeeper View:</strong></h3>
+		<h3><strong>K) Gatekeeper View:</strong></h3>
 		<section id="gatekeeper-dashboard">
             <h4><strong>1) Dashboard :</strong></h4>	
 			<p>Gatekeeper's dashboard.</p>
@@ -1287,109 +1449,13 @@ rel="stylesheet" type="text/css">
 		
 	</section>
 		
-		<section id="fronted-login">
-			<h3><strong>H)  Frontend Login Page:</strong></h3>
-			<ol>
-			<section id="login-page-setting">
-			
-			  <p> After installing this plugin create login page by adding  menu link as shown in image. </p>
-			   <h5><strong><li>Login Page Setting:</li></strong></h5>
-				<img alt="" src="images/login_page_setting.png"><br><br>           
-			  <h5><strong><li>Frontend Login Page:</li></strong></h5>
-				<img alt="" src="images/login-page.png"><br><br>           
-			   <p>Now all user can login from this login page. </p>
-			  <h5><strong><li>Registration Page Setting:</li></strong></h5>
-            <p>For create member registration page you need to simply create menu link.</p>
-             <img alt="" src="images/screenshot/registration-page-settings.png"> <br><br> 
-			<h5><strong><li>Frontend Member Registration Page:</li></strong></h5>
-            <p>When you install plugin registration page will create and set in manu this page on frontend side display like below.</p>
-             <img alt="" src="images/screenshot/registration-page.png">  
-			  </ol>
-				 <hr>
-			 
-        </section>
-				
-		</section>
-		<style>
-		#fronted-theme-setting ol {
-			list-style: disc;
-		}
-		</style>
-		<section id="fronted-theme">
-			<h3><strong>I)  Demo Theme Setup:</strong></h3>
-			<ol>
-				<section id="fronted-theme-setting">
-						<h4><strong>1) FTP Upload</strong></h4>
-						<strong>Note: Existing customers please take a full backup of your site.</strong>
-						<ol>
-						  <li>Unzip the "
-							<mark>twentytwenty-child.zip</mark>
-							" file</li>
-						  <li>Upload the extracted
-							<mark>"twentytwenty-child"</mark>
-							theme folder into "/wp-content / themes/" in your wordpress installation.</li>
-						  <li>To Activate the theme, Go to WP admin panel <strong>Appearance > Themes </strong>activate the Twenty Twenty Child theme.</li>
-						  <img alt="" src="images/theme/active_theme.png">  
-						</ol>
-						<br/>
-						<h4><strong>2) Set Login and Registration page</strong></h4>
-						<ol>
-							<h5><strong>2.1) Set Login page</strong></h5>	
-							<ol style="font-size: 13px;">
-							  <li>To Set Login page go to the WP admin panel <strong>Pages</strong>.</li>
-							  <li>Edit the Apartment Management Login Page see the right side page setting on <strong>Template</strong> Dropdown select the <strong>apartment-login</strong></li>
-							  <li>Click on Update button. (maybe shown Updating failed. The response is not a valid JSON response. but don't worry about it)</li>
-							  <br/>
-							  <img alt="" src="images/theme/login_page.png"> 
-							  <br/>
-							  <br/>
-							 </ol>
-							  <h5><strong>2.2) Set Registration page</strong></h5>
-								<ol style="font-size: 13px;">
-								  <li>To Set Registration page go to the WP admin panel <strong>Pages</strong>.
-								  <li>Edit the Apartment Management Member Registration Page see the right side page setting on <strong>Template</strong> Dropdown select the <strong>apartment-registration</strong></li>
-								   <li>Click on Update button.</li>
-								  <br/>
-								   <img alt="" src="images/theme/reg_page.png"> 
-								</ol>
-						</ol>
-						<br/>	
-						<h4><strong>3) WP Menu Create (If not created)</strong></h4>
-						<ol>
-						  <li>To Create WP Menu go to the WP admin panel <strong>Appearance > Menus</strong></li> 
-						  <li>Insert menu name and select the Desktop Horizontal Menu in Display Location and click on <strong>create menu</strong>.</li>
-						  <br/>	
-						   <img alt="" src="images/theme/create_menu.png">
-						  <br/>	 
-						  <br/>	 
-						  <li>To add menu items <strong>Add menu items > pages</strong></li>
-						  <li>Select <strong>Apartment Management Login Page and Apartment Management Member Registration Page</strong> and click on <strong>Add to Menu</strong></li>
-						  <li>After menu items are added to menu then click on <strong>Save Menu</strong> button.</li>
-						  <br/>	
-						  <img alt="" src="images/theme/menu.png"> 
-						</ol>
-						<br/>	
-						<h4><strong>4) Set Login page as a home page.</strong></h4>
-						<ol>
-						  <li>To Set Login page as a home page go to the WP admin panel <strong>Settings > Reading</strong> </li>
-						  <li>In Your homepage displays select <strong>A static page </strong></li>
-						  <li>In Homepage Select <strong>Apartment Management Login Page</strong> and<strong> click on Save Changes</strong> button.</li>
-						  <br/>	
-						  <img alt="" src="images/theme/static_page.png">
-						</ol>
-						<br/>	
-						<h5><strong> After Performing All Setup Successfully Visit your Site.</strong></h5>
-				</section>
-			</ol>
-			 <hr>
-		</section>
-	
-		
-
-        
           <section id="FAQ">
-          <h3><strong>J) FAQ</strong></h3>
-          	<p><strong>1) Don't See Apartment Management Login Page in page listing.</strong></p>
+		  <h3><strong>L) FAQ</strong></h3>
+		  
+		  <p><strong>1) Prerequisite section.</strong></p>
+		  <p><mark>Note*</mark> The Plugin works best on Cpanel/WHM-enabled hosting. Usage/installation on Nginx / Plesk is not recommended and we will not be able to provide support for the same.</p>
+
+          	<p><strong>2) Don't See Apartment Management Login Page in page listing.</strong></p>
           	<p>Don't worry, You can add login form in two ways. </p>
             <ol>
             	<li>By using shortcode [amgt_login] in a page</li>
@@ -1398,18 +1464,7 @@ rel="stylesheet" type="text/css">
           	<p>If you want to have any paid customization as per your requirements, you can contact us on <a href="">sales@mojoomla.com</a>.</p>
             <hr>
           </section>
-		  <section id="setting-up-Language">
-          	<h3><strong>K) Setting Up Language</strong></h3>
-          	
-				The steps to do the translation are as follows. For example let us consider French translation.
-					<ol>
-                        <li>Download and install <strong>Poedit</strong>.</li>
-                        <li>Open the file apartment-management / <strong>languages</strong> folder &rarr; apartment_mgt-fr_FR.po using <strong>Poedit</strong> .</li>
-                        <li>Choose the Source text and set its corresponding French text in Translation Text Area.</li>
-                        <li>Save the changes.</li>
-                        <li>In Admin menu >> Settings >> General >> Site Language >> Select Your Site Language. </li>
-                    </ol>
-          </section>
+		
          
                     <!-- start-footer-->
           <div id="footer"> © 2023 Mojoomla All Rights Reserved. </div>
