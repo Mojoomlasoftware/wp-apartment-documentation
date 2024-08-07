@@ -2,1493 +2,2264 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
 <!--<![endif]-->
+
 <head>
-<!-- Basic Page Needs
+	<!-- Basic Page Needs
          ================================================== -->
-<meta charset="utf-8">
-<title>Apartment management system - Documentation</title>
-<meta name="description" content="">
-<meta name="author" content="">
-<!-- Mobile Specific Metas	
+	<meta charset="utf-8">
+	<title>Apartment management system - Documentation</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Mobile Specific Metas	
          ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!-- CSS
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- CSS
          ================================================== -->
-<link rel="stylesheet" href="css/style.css" type="text/css"  media="all">
-<link rel="stylesheet" href="css/print.css" type="text/css"  media="print">
-<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Slab:300,400" 
-rel="stylesheet" type="text/css">
-<!-- JS
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Slab:300,400" rel="stylesheet"
+		type="text/css">
+	<!-- JS
          ================================================== -->
-<script type="text/javascript" src="js/jquery.min.js" ></script>
-<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
       <script src="js/modernizr.custom.11889.js" type="text/javascript"></script>
       <![endif]-->
-<!-- HTML5 Shiv events (end)-->
-<!-- Favicons
+	<!-- HTML5 Shiv events (end)-->
+	<!-- Favicons
          ================================================== -->
-<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="images/favicon.ico">
 </head>
+
 <body>
-<!-- Primary Page Layout
+	<!-- Primary Page Layout
          ================================================== -->
-<div id="wrap" class="colorskin-0">
-  	<!-- end-header -->
-  	<section class="container">
-    	<div class="row">
-      		<div id="header-sm">
-        		<div class="col-md-3 logo"> <a href="index.html"><img src="images/mojoomla_logo.png" width="150" id="img-logo" alt="logo"></a> </div>
-        			<div class="col-md-8 col-md-offset-1 desc">
-          				<h4 class="slight">Apartment Management System</h4>
-          				<h5 class="slight"><small> Documented by Mojoomla - at Sep 02 2023</small></h5>
-       				</div>
-     			</div>
-      <div class="col-md-4">
-        <aside id="side-nav">
-          	<div class="logo"> <img src="images/mojoomla_logo.png" id="img-logo" alt="mojoomla" style="margin-bottom:20px;"> </div>
-				<ul id="top-menu">
-					<li><a class="current" href="#Introduction">Introduction</a></li>
-					<li><a href="#Installation">Installation</a></li>
-					<li><a href="#system_setting">System Setting</a></li>
-					<li><a href="#fronted-login">Fronted Login Page</a></li>
-					<li><a href="#fronted-theme">Demo Theme Setup</a></li>
-					<li><a href="#setting-up-Language">setting up Language</a></li>
-					<li><a href="#admin_view">Admin view</a></li>
-					<li><a href="#staff-member-view">Staff Member</a></li>
-					<li><a href="#member-member-view">Member</a></li>
-					<li><a href="#accountant-view">Accountant</a></li>
-					<li><a href="#gatekeeper-view">Gatekeeper</a></li>
-					<li><a href="#FAQ">FAQ</a></li>
-				</ul>
-        </aside>
-      </div>
-      <div class="col-md-8">
-        <section  id="Introduction">
-          <div id="header" class="row">
-            <div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.png"  id="img-logo" alt="logo"></a> </div>
-            <div class="col-md-8 col-md-offset-1 desc">
-              <h4 class="slight">Apartment Management System</h4>
-              <h5 class="slight"><small> Documented by Mojoomla</a> - at Sep 02 2023</small></h5>
-            </div>
-          </div>
-          <hr class="vertical-space2">
-          <p align="center"><img src="images/preview-image.jpg"></p>
-          <h3><strong>A) Introduction</strong></h3>
-          <p>
-			Apartment Management System for wordpress plugin is ideal way to manage complete housing society or neighbourhood maintenance tasks. It has different user roles like  Admin, Resident members, Gatekeeper and Accountant Users.    
-			</p>
-          <p style="margin: 0px 0px 0px 0px!important;">This user guide covers all options that this plugin provides. Please read the documentation carefully as it probably contains answers to most of questions that may arise. If you feel some aspect is not covered or have some questions, contact us via e-mail sales@mojoomla.com. We will do our best to answer you in shortest time.</p>
-          <hr class="vertical-space2">
-		<section id="Package">
-            <hr class="vertical-space2">
-			<hr>
-          
-		<section id="Installation">
-            <h3><strong>B)  Installation:</strong></h3>
-			<h4><strong>1). FTP Upload</strong></h4>
-			<ol>
-              <li style="padding-left:11px;">Unzip the "
-                <mark>apartment_management.zip</mark>
-                " file</li>
-              <li style="padding-left:11px;">Upload the extracted
-                <mark>"Apartment Management"</mark>
-                plugin folder into "/wp-content / plugins/" in your wordpress installation</li>
-              <li style="padding-left:11px;">To Activate the plugin, Go to Plugins and activate the installed plugin</li>
-            </ol>
-            </ol>
-			<h4><strong>2). WordPress Upload</strong></h4>
-            <p>Steps for Apartment Management System plugin Installation:</p>
-           <ol>
-             	 <li style="padding-left:11px;">Go to Wordpress Admin<strong> Plugins</strong> &rarr; click on <strong>Add New</strong> &rarr; click on <strong>Upload</strong>.</li>
-               	<li style="padding-left:11px;">Unzip the "<mark>apartment_management.zip</mark>
-                " file and Upload the <mark>" apartment_management.zip
- 				"</mark> . &rarr; click on <strong>Install Now</strong>. </li>
-              	<li style="padding-left:11px;">Click on <strong>Activate plugin</strong>.</li>
-          		<li style="padding-left:11px;">You can see <strong>Apartment Management</strong> on dashboard.</li>
-            </ol>
-           <p></p>
-            <h5><strong>Increasing the WordPress Memory Limit</strong></h5>
-            <ul>
-              <li> Edit your wp-config.php file and enter something like:
-                <pre>define('WP_MEMORY_LIMIT', '256M');</pre>
-                WordPress memory can be different to the server – you need to set this regardless of server memory settings </li>
-              <li> If you have access to your PHP.ini file, change the line in PHP.ini If your line shows 32M try 256M:
-              	<pre>max_execution_time= 120 ; Maximum execution time of each script </pre>
-                <pre>memory_limit = 256M ; Maximum amount of memory a script may consume (256MB)</pre>
-              </li>
-              <li>If you don't have access to PHP.ini try adding this to an .htaccess file:<br>
-                php_value memory_limit 256M</li>
-              <li>If none of the above works then talk to your host.</li>
-            </ul>
-            
-            <hr>
-		</section>
+	<div id="wrap" class="colorskin-0">
+		<!-- end-header -->
+		<section class="container">
+			<div class="row">
+				<div id="header-sm">
+					<div class="col-md-3 logo"> <a href="index.html"><img src="images/mojoomla_logo.png" width="150"
+								id="img-logo" alt="logo"></a> </div>
+					<div class="col-md-8 col-md-offset-1 desc">
+						<h4 class="slight">Apartment Management System</h4>
+						<h5 class="slight"><small> Documented by Mojoomla - at July 17 2024</small></h5>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<aside id="side-nav">
+						<div class="logo"> <img src="images/mojoomla_logo.png" id="img-logo" alt="mojoomla"
+								style="margin-bottom:20px;"> </div>
+						<ul id="top-menu">
+							<li><a class="current" href="#Introduction">Introduction</a></li>
+							<li><a href="#Installation">Installation</a></li>
+							<li><a href="#system_setting">System Setting</a></li>
+							<li><a href="#fronted-login">Fronted Login Page</a></li>
+							<li><a href="#fronted-theme">Demo Theme Setup</a></li>
+							<li><a href="#setting-up-Language">setting up Language</a></li>
+							<li><a href="#admin_view">Admin view</a></li>
+							<li><a href="#member-member-view">Member</a></li>
+							<li><a href="#staff-member-view">Staff Member</a></li>
+							<li><a href="#accountant-view">Accountant</a></li>
+							<li><a href="#gatekeeper-view">Gatekeeper</a></li>
+							<li><a href="#management_user">Management</a></li>
+							<li><a href="#FAQ">FAQ</a></li>
+						</ul>
+					</aside>
+				</div>
+				<div class="col-md-8">
+					<section id="Introduction">
+						<div id="header" class="row">
+							<div class="col-md-3 logo"> <a href="index.html"><img src="images/logo.png" id="img-logo"
+										alt="logo"></a> </div>
+							<div class="col-md-8 col-md-offset-1 desc">
+								<h4 class="slight">Apartment Management System</h4>
+								<h5 class="slight"><small> Documented by Mojoomla</a> - at July 17 2024</small></h5>
+							</div>
+						</div>
+						<hr class="vertical-space2">
+						<p align="center"><img src="images/preview-image.jpg"></p>
+						<h3><strong>A) Introduction</strong></h3>
+						<p>
+							An Apartment Management System WordPress plugin with different user roles like Admin,
+							Resident Members, Gatekeeper, and Accountant Users can indeed be an effective way to manage
+							the maintenance tasks of a housing society or neighborhood.
+						</p>
+						<p style="margin: 0px 0px 0px 0px!important;">This user guide covers all the options that this
+							plugin provides. Please read the documentation carefully, as it probably contains answers to
+							most of the questions that may arise. If you feel some aspect is not covered or have some
+							questions, contact us via e-mail at sales@mojoomla.com. We will do our best to answer you in
+							the shortest time.</p>
+						<hr class="vertical-space2">
+						<section id="Package">
+							<hr class="vertical-space2">
+							<hr>
 
-		<section id="system_setting">
-				<h3><strong>C)  System Setting</strong></h3>
-				<h4><strong>1) Licence Settings</strong></h4>
-				<p>Click on <strong>Licence Settings</strong> under apartment management link-list to start setting up the system. Please fill all required fields. You can access plugin only after successfully registration of your Envanto License key. You can use single licence key for only single domain. Same licence key can't user for different domains. </p>
-				<img alt="" src="images/screenshot/licence-settings.png">
-				<br>
-				<br>
-				<ul>
-				
-				<ol>
-					<li><strong>Domain :</strong> This is your domain name. You not need ot enter it. System automatically take it. </li>
-					<li><a href="https://www.dasinfomedia.com/how-to-find-codecanyon-purchase-key/"><strong>How to find your license key (purchase code)</strong></a></li>
-					<li><strong>Envanto License key: </strong>Enter envanto licence key of the apartment. </li>
-					<li><strong>Email: </strong>Enter your email.</li>
-				</ol>
-				</ul>
-				<hr>
-			</section>
-			<section id="setup_wizard">
-					<h4><strong>2) Setup Wizard</strong></h4>
-				
-					<img alt="" src="images/screenshot/setup_wizard.png">
-					<br>
-					<br>
-					<p>This all step follow for complate setup wizard. </p>
-					<ul>
-					
-					<ol>
-						<li><strong>General Setting:</strong>You can set all the settings as per your requirement by clicking on General Settings. </li>
-						<li><strong>Add Residential Unit: </strong>You can add residential unit by clicking on Add Residential Unit. </li>
-						<li><strong>Add Member: </strong>You can add member by clicking on Add Member. </li>
-						<li><strong>Add Document: </strong>You can add member's document by clicking on Add Document. </li>
-						<li><strong>Add Invoice: </strong>You can create invoice by clicking on Add Invoice. </li>
-					</ol>
-					</ul>
-					
-				<hr>
-
-			</section>
-			
-		<section id="fronted-login">
-			<h3><strong>D)  Frontend Login Page</strong></h3>
-			<ol>
-			<section id="login-page-setting">
-			
-				<p> After installing this plugin create login page by adding  menu link as shown in image. </p>
-				<h5><strong><li>Login Page Setting:</li></strong></h5>
-				<img alt="" src="images/login_page_setting.png"><br><br>           
-				<h5><strong><li>Frontend Login Page:</li></strong></h5>
-				<img alt="" src="images/login-page.png"><br><br>           
-				<p>Now all user can login from this login page. </p>
-				<h5><strong><li>Registration Page Setting:</li></strong></h5>
-			<p>For create member registration page you need to simply create menu link.</p>
-				<img alt="" src="images/screenshot/registration-page-settings.png"> <br><br> 
-			<h5><strong><li>Frontend Member Registration Page:</li></strong></h5>
-			<p>When you install plugin registration page will create and set in manu this page on frontend side display like below.</p>
-				<img alt="" src="images/screenshot/registration-page.png">  
-				</ol>
-					<hr>
-				
-		</section>
-				
-		</section>
-		<style>
-		#fronted-theme-setting ol {
-			list-style: disc;
-		}
-		</style>
-		<section id="fronted-theme">
-			<h3><strong>E)  Demo Theme Setup</strong></h3>
-			<ol>
-				<section id="fronted-theme-setting">
-						<h4><strong>1) FTP Upload</strong></h4>
-						<strong>Note: Existing customers please take a full backup of your site.</strong>
-						<ol>
-							<li>Unzip the "
-							<mark>twentytwenty-child.zip</mark>
-							" file</li>
-							<li>Upload the extracted
-							<mark>"twentytwenty-child"</mark>
-							theme folder into "/wp-content / themes/" in your wordpress installation.</li>
-							<li>To Activate the theme, Go to WP admin panel <strong>Appearance > Themes </strong>activate the Twenty Twenty Child theme.</li>
-							<img alt="" src="images/theme/active_theme.png">  
-						</ol>
-						<br/>
-						<h4><strong>2) Set Login and Registration page</strong></h4>
-						<ol>
-							<h5><strong>2.1) Set Login page</strong></h5>	
-							<ol style="font-size: 13px;">
-								<li>To Set Login page go to the WP admin panel <strong>Pages</strong>.</li>
-								<li>Edit the Apartment Management Login Page see the right side page setting on <strong>Template</strong> Dropdown select the <strong>apartment-login</strong></li>
-								<li>Click on Update button. (maybe shown Updating failed. The response is not a valid JSON response. but don't worry about it)</li>
-								<br/>
-								<img alt="" src="images/theme/login_page.png"> 
-								<br/>
-								<br/>
+							<section id="Installation">
+								<h3><strong>B) Installation:</strong></h3>
+								<h4><strong>1). FTP Upload</strong></h4>
+								<ol>
+									<li style="padding-left:11px;">Unzip the "
+										<mark>apartment_management.zip</mark>
+										" file
+									</li>
+									<li style="padding-left:11px;">Upload the extracted
+										<mark>"Apartment Management"</mark>
+										plugin folder into "/wp-content / plugins/" in your wordpress installation
+									</li>
+									<li style="padding-left:11px;">To Activate the plugin, Go to Plugins and activate
+										the installed plugin</li>
 								</ol>
-								<h5><strong>2.2) Set Registration page</strong></h5>
-								<ol style="font-size: 13px;">
-									<li>To Set Registration page go to the WP admin panel <strong>Pages</strong>.
-									<li>Edit the Apartment Management Member Registration Page see the right side page setting on <strong>Template</strong> Dropdown select the <strong>apartment-registration</strong></li>
-									<li>Click on Update button.</li>
-									<br/>
-									<img alt="" src="images/theme/reg_page.png"> 
 								</ol>
-						</ol>
-						<br/>	
-						<h4><strong>3) WP Menu Create (If not created)</strong></h4>
-						<ol>
-							<li>To Create WP Menu go to the WP admin panel <strong>Appearance > Menus</strong></li> 
-							<li>Insert menu name and select the Desktop Horizontal Menu in Display Location and click on <strong>create menu</strong>.</li>
-							<br/>	
-							<img alt="" src="images/theme/create_menu.png">
-							<br/>	 
-							<br/>	 
-							<li>To add menu items <strong>Add menu items > pages</strong></li>
-							<li>Select <strong>Apartment Management Login Page and Apartment Management Member Registration Page</strong> and click on <strong>Add to Menu</strong></li>
-							<li>After menu items are added to menu then click on <strong>Save Menu</strong> button.</li>
-							<br/>	
-							<img alt="" src="images/theme/menu.png"> 
-						</ol>
-						<br/>	
-						<h4><strong>4) Set Login page as a home page.</strong></h4>
-						<ol>
-							<li>To Set Login page as a home page go to the WP admin panel <strong>Settings > Reading</strong> </li>
-							<li>In Your homepage displays select <strong>A static page </strong></li>
-							<li>In Homepage Select <strong>Apartment Management Login Page</strong> and<strong> click on Save Changes</strong> button.</li>
-							<br/>	
-							<img alt="" src="images/theme/static_page.png">
-						</ol>
-						<br/>	
-						<h5><strong> After Performing All Setup Successfully Visit your Site.</strong></h5>
-				</section>
-			</ol>
-				<hr>
-		</section>
+								<h4><strong>2). WordPress Upload</strong></h4>
+								<p>Steps for Apartment Management System plugin Installation:</p>
+								<ol>
+									<li style="padding-left:11px;">Go to Wordpress Admin<strong> Plugins</strong> &rarr;
+										click on <strong>Add New</strong> &rarr; click on <strong>Upload</strong>.</li>
+									<li style="padding-left:11px;">Unzip the "<mark>apartment_management.zip</mark>
+										" file and Upload the <mark>" apartment_management.zip
+											"</mark> . &rarr; click on <strong>Install Now</strong>. </li>
+									<li style="padding-left:11px;">Click on <strong>Activate plugin</strong>.</li>
+									<li style="padding-left:11px;">You can see <strong>Apartment Management</strong> on
+										dashboard.</li>
+								</ol>
+								<p></p>
+								<h5><strong>Increasing the WordPress Memory Limit</strong></h5>
+								<ul>
+									<li> Edit your wp-config.php file and enter something like:
+										<pre>define('WP_MEMORY_LIMIT', '256M');</pre>
+										WordPress memory can be different to the server – you need to set this
+										regardless of server memory settings
+									</li>
+									<li> If you have access to your PHP.ini file, change the line in PHP.ini If your
+										line shows 32M try 256M:
+										<pre>max_execution_time= 120 ; Maximum execution time of each script </pre>
+										<pre>memory_limit = 256M ; Maximum amount of memory a script may consume (256MB)</pre>
+									</li>
+									<li>If you don't have access to PHP.ini try adding this to an .htaccess file:<br>
+										php_value memory_limit 256M</li>
+									<li>If none of the above works then talk to your host.</li>
+								</ul>
 
-		<section id="setting-up-Language">
-				<h3><strong>F) Setting Up Language</strong></h3>
-				
-				  The steps to do the translation are as follows. For example let us consider French translation.
-					  <ol>
-						  <li>Download and install <strong>Poedit</strong>.</li>
-						  <li>Open the file apartment-management / <strong>languages</strong> folder &rarr; apartment_mgt-fr_FR.po using <strong>Poedit</strong> .</li>
-						  <li>Choose the Source text and set its corresponding French text in Translation Text Area.</li>
-						  <li>Save the changes.</li>
-						  <li>In Admin menu >> Settings >> General >> Site Language >> Select Your Site Language. </li>
-					  </ol>
-			</section>
-		<section id="admin_view">
-		<section id="admin-dasboard">
-				 <h3><strong>G)  Admin</strong></h3>
-				 <h4><strong>1) Dashboard</strong></h4>
-				 <p> Admin side dashboard view.</p>
-				<img alt="Install plugin" src="images/screenshot/admin_dashboard.png">
-            <hr>
-		</section>
-        <section id="General-Settings">
-            <h4><strong>2) General Settings</strong></h4>
-            <p>Click on <strong>General Setting</strong> under apartment management link-list to start setting up the system . You are advised to fill all fields of General settings as these details are used in different section of whole system. You can change these settings as per your requirement.</p>
-            <img alt="" src="images/screenshot/admin side/genearl_setings.png">
-            <br>
-            <br>
-             <ul>
-              
-            <ol>
+								<hr>
+							</section>
 
-            	<li><strong>Apartment Name :</strong> Enter name of apartment.</li>
-            	<li><strong>Apartment Type :</strong> Enter Type of apartment.</li>
-                <li><strong>Starting Year : </strong>Enter starting year of the apartment. </li>
-                <li><strong>Apartment Address : </strong>Enter address of the apartment.</li>
-                <li><strong>Official Phone No : </strong>Enter official phone number of the apartment.</li>
-                <li><strong>Country : </strong>Enter country of apartment Located in.</li>
-                <li><strong>E-mail : </strong>Enter official e-mail address of the apartment.</li>
-                <li><strong>Date Format : </strong>Select date format.</li>
-                <li><strong>Apartment Logo : </strong>Enter apartment logo.</li>
-                <li><strong>Profile Cover Image : </strong>Upload apartment photo and this will be used for profile background.</li>
-                <li><strong>Login Page : </strong>Select page for login page.</li>
-                <li><strong>Enable Notifications : </strong>Enable it if you want to send notification mail to members.</li>
-                <li><strong>Member can view other member's Complaints : </strong>Enable it if you want to members can view complaints of other members.</li>
-                <li><strong>Member can see other buildings member info : </strong>Enable it if you want to members can view other buildings member information.</li>
-				<li><strong>Enable Sendbox: </strong>If you are test payment in paypal then it should be enable.</li>
-				<li><strong>Paypal Email Id: </strong>Enter here your paypal email id.</li>
-				<li><strong>Select Currency: </strong>From here select your currency.</li>
-				<li><strong>Invoice Information: </strong>Enter invoice information.</li>
-				<li><strong>Bank Information: </strong>Enter Bank information.</li>
-				<li><strong>Allow Member To Multiple Units: </strong>Enable it if you want to assign member to multiple units.</li>
-				<li><strong>Do You Want To Add Penalty?: </strong>Enable it if you want to add a penalty for late payment.</li>
-				<li><strong>Penalty Days: </strong>Add penalty days for how much after day you want to add a penalty.</li>
-				<li><strong>Penalty Charge %: </strong>Add penalty charge in percentage for late payment.</li>
-				<li><strong>Dashboard Card Setting For Member: </strong>Enable options if you want to give card & visitor's chart view access for member.</li>
-				<li><strong>Dashboard Card Setting For Staff Member: </strong>Enable options if you want to give card & visitor's chart view access for staff member.</li>
-				<li><strong>Dashboard Card Setting For Accountant: </strong>Enable options if you want to give card & visitor's chart view access for accountant.</li>
-				<li><strong>Dashboard Card Setting For Gatekeeper: </strong>Enable options if you want to give card & visitor's chart view access for gatekeeper.</li>
-			</ol>
-             
-            </ul>
-             <hr>
-		</section>
-            
-		<section id="residential-units">
-            <h4><strong>3)  Residential Units:</strong></h4>	
-            <p>You can add new residential unit and manage all units as well as view complete list of all residential unit.</p>
-           
-            <img alt="membership" src="images/screenshot/admin side/view_rasidential.png"><br><br>
-			
-			<ol>
-				<h5><strong><li>Add Residential Unit:</li></strong></h5> 
-				<p> </p>
-				<img alt="teacher" src="images/screenshot/admin side/add_unit.png"><br><br>
-				<p> Here you can add new units of building.</p>
-				<ul>
-					<li><strong>Building : </strong>You can add new building or also can be select from existing buildings.</li>
-					<li><strong>Unit Category : </strong>You can add new unit category or also can be select from existing unit categories.</li>
-					<li><strong>Unit Name : </strong>Here Enter unit name for add new unit. You can also add more than one units in single building. For add more than one units in same building simultaneously click on <strong> Add More Unit </strong>button.</li>
-				</ul>
-				<h5><strong><li>View Member History:</li></strong></h5> 
-				<p>From here user can view member history of that unit. </p>
-				<img alt="viewdoc" src="images/view_member.png"><br><br>
-				<h5><strong><li>View Member:</li></strong></h5> 
-				<p>From here user can view members of that unit. </p>
-				<img alt="viewmember" src="images/view_member1.png"><br><br>
-			</ol>
+							<section id="system_setting">
+								<h3><strong>C) System Setting</strong></h3>
+								<h4><strong>1) Licence Settings</strong></h4>
+								<p>Click on <strong>Licence Settings</strong> the apartment management link list to
+									start setting up the system. Please fill in all required fields. You can access the
+									plugin only after successfully registering your Envanto License key. You can use a
+									single licence key for only a single domain. The same licence key can't be used for
+									different domains. </p>
+								<img alt="" src="images/screenshot/licence-settings.png">
+								<br>
+								<br>
+								<ul>
 
-            <hr>
-		</section>
-				
-		<section id="member">
-			<h4><strong>4) Member:</strong></h4>
-            <p>You can manage all information about Member.</p>
-            <img alt="member " src="images/screenshot/member_list.png">
-            <br>
-            <ol>
-				<h5><strong><li>Add Member Information:</li></strong></h5> 
-				<p></p>
-				<img alt="add-patient " src="images/screenshot/admin side/add_member.png"><br><br>
-            	<br> 
+									<ol>
+										<li><strong>Domain :</strong> This is your domain name. You not need ot enter
+											it. System automatically take it. </li>
+										<li><a href="https://www.dasinfomedia.com/how-to-find-codecanyon-purchase-key/"><strong>How
+													to find your license key (purchase code)</strong></a></li>
+										<li><strong>Envanto License key: </strong>Enter envanto licence key of the
+											apartment. </li>
+										<li><strong>Email: </strong>Enter your email.</li>
+									</ol>
+								</ul>
+								<hr>
+							</section>
+							<section id="setup_wizard">
+								<h4><strong>2) Setup Wizard</strong></h4>
 
-				<h5><strong><li>Upload Member CSV File:</li></strong></h5>
-				<p>You can upload bulk of Member data in csv. </p>
-				<img alt="add-patient " src="images/screenshot/admin side/upload_member.png"><br><br>
-            	<br> 
+								<img alt="" src="images/screenshot/setup_wizard.png">
+								<br>
+								<br>
+								<p>This all step follow for complate setup wizard. </p>
+								<ul>
 
-				<h5><strong><li>Export Member CSV File:</li></strong></h5>
-				<p>You can export Member data in csv format by clicking on the Export selected button.
-				</p>
-				<img alt="add-patient " src="images/screenshot/admin side/export_member.png"><br><br>
-            	<br> 
+									<ol>
+										<li><strong>General Setting:</strong>You can set all the settings as per your
+											requirement by clicking on General Settings. </li>
+										<li><strong>Add Residential Unit: </strong>You can add residential unit by
+											clicking on Add Residential Unit. </li>
+										<li><strong>Add Member: </strong>You can add member by clicking on Add Member.
+										</li>
+										<li><strong>Add Document: </strong>You can add member's document by clicking on
+											Add Document. </li>
+										<li><strong>Add Invoice: </strong>You can create invoice by clicking on Add
+											Invoice. </li>
+									</ol>
+								</ul>
 
-				<h5><strong><li>View Member:</li></strong></h5> 
-              	<p>Admin can view detail of particular member by clicking on view button.</p>
-				<img alt="view detail" src="images/screenshot/admin side/member_view.png">
-             	<br>
-				<ul>
-					<h5><strong><li>Member Detail Page:</li></strong></h5> 
-					<li><h6><strong>1) View Invoice </strong></h6></li>
-					<img alt="add-patient " src="images/screenshot/admin side/invoice_tab.png"><br><br>
-					<li><h6><strong>2) View Complaint </strong></h6></li>
-					<img alt="add-patient " src="images/screenshot/admin side/Complaint_tab.png"><br><br>
-					<li><h6><strong>3) View Document </strong></h6></li>
-					<img alt="add-patient " src="images/screenshot/admin side/Document_tab.png"><br><br>
-					<li><h6><strong>4) View Facility Booking </strong></h6></li>
-					<img alt="add-patient " src="images/screenshot/admin side/Facility_Booking_tab.png"><br><br>
-					<li><h6><strong>5) View Notice </strong></h6></li>
-					<img alt="add-patient " src="images/screenshot/admin side/Notice_tab.png"><br><br>
-					<li><h6><strong>6) View Event </strong></h6></li>
-					<img alt="add-patient " src="images/screenshot/admin side/Event_tab.png"><br><br>
-					<li><h6><strong>7) View Message </strong></h6></li>
-					<img alt="add-patient " src="images/screenshot/admin side/Message_tab.png"><br><br>
-				</ul>	
-            	<br> 
-			</ol>
-			<hr>
-		</section>
-		
-		<section id="staff_member">
-			<h4><strong>5) Staff Member:</strong></h4>
-            <p>You can manage all information about Staff Member.</p>
-            <img alt="Staff Member" src="images/screenshot/Staff_Member_list.png">
-            <br>
-            <ol>
-				<h5><strong><li>Add Staff Member Information:</li></strong></h5> 
-				<p> </p>
-				<img alt="add-patient " src="images/screenshot/staff_member_add.png"><br><br>
-            	<br> 
+								<hr>
 
-				<h5><strong><li>Upload Staff Member CSV File:</li></strong></h5>
-				<p>You can upload bulk of Staff Member data in csv. </p>
-				<img alt="add-patient " src="images/screenshot/admin side/upload_Staff_Member.png"><br><br>
-            	<br> 
+							</section>
 
-				<h5><strong><li>Export Staff Member CSV File:</li></strong></h5>
-				<p>You can export Staff Member data in csv format by clicking on the Export selected button.
-				</p>
-				<img alt="add-patient " src="images/screenshot/admin side/export_Staff_Member.png"><br><br>
-            	<br> 
+							<section id="fronted-login">
+								<h3><strong>D) Frontend Login Page</strong></h3>
+								<ol>
+									<section id="login-page-setting">
 
-				<h5><strong><li>View Staff Member:</li></strong></h5> 
-              	<p>Admin can view detail of particular Staff Member by clicking on view button.</p>
-				<img alt="view detail" src="images/screenshot/admin side/Staff_Member_view.png">
-             	<br>
-            	<br> 
-			</ol>
-			<hr>
-		</section>
+										<p> After installing this plugin create login page by adding menu link as shown
+											in image. </p>
+										<h5><strong>
+												<li>Login Page Setting:</li>
+											</strong></h5>
+										<img alt="" src="images/login_page_setting.png"><br><br>
+										<h5><strong>
+												<li>Frontend Login Page:</li>
+											</strong></h5>
+										<img alt="" src="images/login-page.png"><br><br>
+										<p>Now all user can login from this login page. </p>
+										<h5><strong>
+												<li>Registration Page Setting:</li>
+											</strong></h5>
+										<p>For create member registration page you need to simply create menu link.</p>
+										<img alt="" src="images/screenshot/registration-page-settings.png"> <br><br>
+										<h5><strong>
+												<li>Frontend Member Registration Page:</li>
+											</strong></h5>
+										<p>When you install plugin registration page will create and set in manu this
+											page on frontend side display like below.</p>
+										<img alt="" src="images/screenshot/registration-page.png">
+								</ol>
+								<hr>
 
-		<section id="Accountant">
-			<h4><strong>6) Accountant:</strong></h4>
-            <p>You can manage all information about Accountant.</p>
-            <img alt="Staff Member" src="images/screenshot/accountant_list.png">
-            <br>
-            <ol>
-				<h5><strong><li>Add Accountant Information:</li></strong></h5> 
-				<p> </p>
-				<img alt="add-patient " src="images/screenshot/accountant_add.png"><br><br>
-            	<br> 
+							</section>
 
-				<h5><strong><li>Upload Accountant CSV File:</li></strong></h5>
-				<p>You can upload bulk of Accountant data in csv. </p>
-				<img alt="add-patient " src="images/screenshot/admin side/upload_Accountant.png"><br><br>
-            	<br> 
+						</section>
+						<style>
+							#fronted-theme-setting ol {
+								list-style: disc;
+							}
+						</style>
+						<section id="fronted-theme">
+							<h3><strong>E) Demo Theme Setup</strong></h3>
+							<ol>
+								<section id="fronted-theme-setting">
+									<h4><strong>1) FTP Upload</strong></h4>
+									<strong>Note: Existing customers please take a full backup of your site.</strong>
+									<ol>
+										<li>Unzip the "
+											<mark>twentytwenty-child.zip</mark>
+											" file
+										</li>
+										<li>Upload the extracted
+											<mark>"twentytwenty-child"</mark>
+											theme folder into "/wp-content / themes/" in your wordpress installation.
+										</li>
+										<li>To Activate the theme, Go to WP admin panel <strong>Appearance > Themes
+											</strong>activate the Twenty Twenty Child theme.</li>
+										<img alt="" src="images/theme/active_theme.png">
+									</ol>
+									<br />
+									<h4><strong>2) Set Login and Registration page</strong></h4>
+									<ol>
+										<h5><strong>2.1) Set Login page</strong></h5>
+										<ol style="font-size: 13px;">
+											<li>To Set Login page go to the WP admin panel <strong>Pages</strong>.</li>
+											<li>Edit the Apartment Management Login Page see the right side page setting
+												on <strong>Template</strong> Dropdown select the
+												<strong>apartment-login</strong>
+											</li>
+											<li>Click on Update button. (maybe shown Updating failed. The response is
+												not a valid JSON response. but don't worry about it)</li>
+											<br />
+											<img alt="" src="images/theme/login_page.png">
+											<br />
+											<br />
+										</ol>
+										<h5><strong>2.2) Set Registration page</strong></h5>
+										<ol style="font-size: 13px;">
+											<li>To Set Registration page go to the WP admin panel
+												<strong>Pages</strong>.
+											<li>Edit the Apartment Management Member Registration Page see the right
+												side page setting on <strong>Template</strong> Dropdown select the
+												<strong>apartment-registration</strong>
+											</li>
+											<li>Click on Update button.</li>
+											<br />
+											<img alt="" src="images/theme/reg_page.png">
+										</ol>
+									</ol>
+									<br />
+									<h4><strong>3) WP Menu Create (If not created)</strong></h4>
+									<ol>
+										<li>To Create WP Menu go to the WP admin panel <strong>Appearance >
+												Menus</strong></li>
+										<li>Insert menu name and select the Desktop Horizontal Menu in Display Location
+											and click on <strong>create menu</strong>.</li>
+										<br />
+										<img alt="" src="images/theme/create_menu.png">
+										<br />
+										<br />
+										<li>To add menu items <strong>Add menu items > pages</strong></li>
+										<li>Select <strong>Apartment Management Login Page and Apartment Management
+												Member Registration Page</strong> and click on <strong>Add to
+												Menu</strong></li>
+										<li>After menu items are added to menu then click on <strong>Save Menu</strong>
+											button.</li>
+										<br />
+										<img alt="" src="images/theme/menu.png">
+									</ol>
+									<br />
+									<h4><strong>4) Set Login page as a home page.</strong></h4>
+									<ol>
+										<li>To Set Login page as a home page go to the WP admin panel <strong>Settings >
+												Reading</strong> </li>
+										<li>In Your homepage displays select <strong>A static page </strong></li>
+										<li>In Homepage Select <strong>Apartment Management Login Page</strong>
+											and<strong> click on Save Changes</strong> button.</li>
+										<br />
+										<img alt="" src="images/theme/static_page.png">
+									</ol>
+									<br />
+									<h5><strong> After Performing All Setup Successfully Visit your Site.</strong></h5>
+								</section>
+							</ol>
+							<hr>
+						</section>
 
-				<h5><strong><li>Export Accountant CSV File:</li></strong></h5>
-				<p>You can export Accountant data in csv format by clicking on the Export selected button.
-				</p>
-				<img alt="add-patient " src="images/screenshot/admin side/export_Accountant.png"><br><br>
-            	<br> 
+						<section id="setting-up-Language">
+							<h3><strong>F) Setting Up Language</strong></h3>
+
+							The steps to do the translation are as follows. For example let us consider French
+							translation.
+							<ol>
+								<li>Download and install <strong>Poedit</strong>.</li>
+								<li>Open the file apartment-management / <strong>languages</strong> folder &rarr;
+									apartment_mgt-fr_FR.po using <strong>Poedit</strong> .</li>
+								<li>Choose the Source text and set its corresponding French text in Translation Text
+									Area.</li>
+								<li>Save the changes.</li>
+								<li>In Admin menu >> Settings >> General >> Site Language >> Select Your Site Language.
+								</li>
+							</ol>
+						</section>
+						<section id="admin_view">
+							<section id="admin-dasboard">
+								<h3><strong>G) Admin</strong></h3>
+								<h4><strong>1) Dashboard</strong></h4>
+								<p> Admin side dashboard view.</p>
+								<img alt="Install plugin" src="images/screenshot/admin_dashboard.png">
+								<hr>
+							</section>
+							<section id="General-Settings">
+								<h4><strong>2) General Settings</strong></h4>
+								<p>Click on <strong>General Setting</strong> under the apartment management link list to
+									start setting up the system. You are advised to fill all fields with General
+									settings, as these details are used in different sections of the whole system. You
+									can change these settings as per your requirements.</p>
+								<img alt="" src="images/screenshot/admin side/genearl_setings.png">
+								<br>
+								<br>
+								<ul>
+
+									<ol>
+
+										<li><strong>Apartment Name :</strong> Enter name of apartment.</li>
+										<li><strong>Apartment Type :</strong> Enter Type of apartment.</li>
+										<li><strong>Starting Year : </strong>Enter starting year of the apartment. </li>
+										<li><strong>Apartment Address : </strong>Enter address of the apartment.</li>
+										<li><strong>Official Phone No : </strong>Enter official phone number of the
+											apartment.</li>
+										<li><strong>Country : </strong>Enter country of apartment Located in.</li>
+										<li><strong>E-mail : </strong>Enter official e-mail address of the apartment.
+										</li>
+										<li><strong>Date Format : </strong>Select date format.</li>
+										<li><strong>Apartment Logo : </strong>Enter apartment logo.</li>
+										<li><strong>Profile Cover Image : </strong>Upload apartment photo and this will
+											be used for profile background.</li>
+										<li><strong>System Color: </strong>If you want change system color, then add
+											System color.</li>
+										<li><strong>Enable Notifications : </strong>Enable it if you want to send
+											notification mail to members.</li>
+										<li><strong>Member can view other member's Complaints : </strong>Enable it if
+											you want to members can view complaints of other members.</li>
+										<li><strong>Member can see other buildings member info : </strong>Enable it if
+											you want to members can view other buildings member information.</li>
+										<li><strong>Enable Sendbox: </strong>If you are test payment in paypal then it
+											should be enable.</li>
+										<li><strong>Paypal Email Id: </strong>Enter here your paypal email id.</li>
+										<li><strong>Select Currency: </strong>From here select your currency.</li>
+										<li><strong>Invoice Information: </strong>Enter invoice information.</li>
+										<li><strong>Bank Information: </strong>Enter Bank information.</li>
+										<li><strong>Unit Measurement: </strong>Choose any unit for measurement.</li>
+										<li><strong>Enable Charges: </strong>Enable it if you want to add charges.</li>
+										<li><strong>Allow Member To Multiple Units: </strong>Enable it if you want to
+											assign member to multiple units.</li>
+										<li><strong>Do You Want To Add Penalty?: </strong>Enable it if you want to add a
+											penalty for late payment.</li>
+										<li><strong>Penalty Days: </strong>Add penalty days for how much after day you
+											want to add a penalty.</li>
+										<li><strong>Penalty Charge %: </strong>Add penalty charge in percentage for late
+											payment.</li>
+										<li><strong>Want To Create Invoice For Tenant?: </strong>Enable option if you
+											want to create invoice for Tenant.</li>
+										<li><strong>Owner Can Collect Tenant's Rent?: </strong>Enable option if
+											you want owner can collect tenant's rent.</li>
+									</ol>
+
+								</ul>
+								<hr>
+							</section>
+
+							<section id="residential-units">
+								<h4><strong>3) Residential Units:</strong></h4>
+								<p>Add a new residential unit, manage existing units, and view a complete list of all
+									residential units in an apartment management system.</p>
+
+								<img alt="membership" src="images/screenshot/admin side/view_rasidential.png"><br><br>
+
+								<ol>
+									<h5><strong>
+											<li>Add Residential Unit:</li>
+										</strong></h5>
+									<p>Here you can add a new Residential Unit by filling this form.</p>
+									<img alt="teacher" src="images/screenshot/admin side/add_unit.png"><br><br>
+									<p> Here you can add new units of building.</p>
+									<ul>
+										<li><strong>Building : </strong>You can add new building or also can be select
+											from existing buildings.</li>
+										<li><strong>Unit Category : </strong>You can add new unit category or also can
+											be select from existing unit categories.</li>
+										<li><strong>Unit Name : </strong>Here Enter unit name for add new unit. You can
+											also add more than one units in single building. For add more than one units
+											in same building simultaneously click on <strong> Add More Unit
+											</strong>button.</li>
+									</ul>
+
+									<h5><strong>
+											<li>Edit Residential Unit:</li>
+										</strong></h5>
+									<p>Here you can edit a Residential Unit.</p>
+									<img alt="teacher" src="images/screenshot/admin side/edit_unit.png"><br><br>
+
+									<h5><strong>
+											<li>View Occupied History:</li>
+										</strong></h5>
+									<p>From here user can view occupied history of that unit. </p>
+									<img alt="viewdoc" src="images/view_member.png"><br><br>
+									<h5><strong>
+											<li>View Member:</li>
+										</strong></h5>
+									<p>From here user can view members of that unit. </p>
+									<img alt="viewmember" src="images/view_member1.png"><br><br>
+								</ol>
+
+								<hr>
+							</section>
+
+							<section id="member">
+								<h4><strong>4) Member:</strong></h4>
+								<p>You can manage all the information about members.</p>
+								<img alt="member " src="images/screenshot/member_list.png">
+								<br>
+								<ol>
+									<h5><strong>
+											<li>Add Member Information:</li>
+										</strong></h5>
+									<p>Here you can add a new member by filling this form.</p>
+									<img alt="add-patient " src="images/screenshot/admin side/add_member.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>Edit Member Information:</li>
+										</strong></h5>
+									<p>Here you can edit a member's information.</p>
+									<img alt="add-patient " src="images/screenshot/admin side/edit_member.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>Upload Member CSV File:</li>
+										</strong></h5>
+									<p>You can upload bulk of Member data in csv. </p>
+									<img alt="add-patient "
+										src="images/screenshot/admin side/upload_member.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>Export Member CSV File:</li>
+										</strong></h5>
+									<p>You can export Member data in csv format by clicking on the Export selected
+										button.
+									</p>
+									<img alt="add-patient "
+										src="images/screenshot/admin side/export_member.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>View Member:</li>
+										</strong></h5>
+									<p>Admin can view details of particular members by clicking on the view button.</p>
+									<img alt="view detail" src="images/screenshot/admin side/member_view.png">
+									<br>
+									<ul>
+										<h5><strong>
+												<li>Member Detail Page:</li>
+											</strong></h5>
+										<li>
+											<h6><strong>1) View Tenant </strong></h6>
+										</li>
+										<p>Here Admin can add and view tenant information.</p>
+										<img alt="add-tenant "
+											src="images/screenshot/admin side/Tenant.png"><br><br>
+										<li>
+											<h6><strong>2) View Family Member </strong></h6>
+										</li>
+										<p>Here Admin can add family member.</p>
+										<img alt="add-patient "
+											src="images/screenshot/admin side/family_member_tab.png"><br><br>
+										<li>
+											<h6><strong>3) View Invoice </strong></h6>
+										</li>
+										<p>Here Admin can view invoice details.</p>
+										<img alt="add-patient "
+											src="images/screenshot/admin side/invoice_tab.png"><br><br>
+										<li>
+											<h6><strong>4) View Complaint </strong></h6>
+										</li>
+										<p>Here Admin can add and view complaints.</p>
+										<img alt="add-patient "
+											src="images/screenshot/admin side/Complaint_tab.png"><br><br>
+										<li>
+											<h6><strong>5) View Document </strong></h6>
+										</li>
+										<p>Here Admin can view documents details.</p>
+										<img alt="add-patient "
+											src="images/screenshot/admin side/Document_tab.png"><br><br>
+										<li>
+											<h6><strong>6) View Facility Booking </strong></h6>
+										</li>
+										<p>Here Admin can view facility booking details.</p>
+										<img alt="add-patient "
+											src="images/screenshot/admin side/Facility_Booking_tab.png"><br><br>
+										<li>
+											<h6><strong>7) View Notice </strong></h6>
+										</li>
+										<p>Here Admin can view notices list.</p>
+										<img alt="add-patient "
+											src="images/screenshot/admin side/Notice_tab.png"><br><br>
+										<li>
+											<h6><strong>8) View Event </strong></h6>
+										</li>
+										<p>Here Admin can view events details.</p>
+										<img alt="add-patient "
+											src="images/screenshot/admin side/Event_tab.png"><br><br>
+										<li>
+											<h6><strong>9) View Message </strong></h6>
+										</li>
+										<p>Here Admin can view messages.</p>
+										<img alt="add-patient "
+											src="images/screenshot/admin side/Message_tab.png"><br><br>
+									</ul>
+									<br>
+								</ol>
+								<hr>
+							</section>
+
+							<section id="staff_member">
+								<h4><strong>5) Staff Member:</strong></h4>
+								<p>You can manage all the information about Staff Members.</p>
+								<img alt="Staff Member" src="images/screenshot/Staff_Member_list.png">
+								<br>
+								<ol>
+									<h5><strong>
+											<li>Add Staff Member Information:</li>
+										</strong></h5>
+									<p>Here you can add a new staff member by filling this form.</p>
+									<img alt="add-patient " src="images/screenshot/staff_member_add.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>Edit Staff Member Information:</li>
+										</strong></h5>
+									<p>Here you can edit a staff member information.</p>
+									<img alt="add-staff " src="images/screenshot/staff_member_edit.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>Upload Staff Member CSV File:</li>
+										</strong></h5>
+									<p>You can upload bulk of Staff Member data in csv. </p>
+									<img alt="add-patient "
+										src="images/screenshot/admin side/upload_Staff_Member.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>Export Staff Member CSV File:</li>
+										</strong></h5>
+									<p>You can export Staff Member data in csv format by clicking on the Export selected
+										button.
+									</p>
+									<img alt="add-patient "
+										src="images/screenshot/admin side/export_Staff_Member.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>View Staff Member:</li>
+										</strong></h5>
+									<p>Admin can view details of a particular Staff Member by clicking on the view
+										button.</p>
+									<img alt="view detail" src="images/screenshot/admin side/Staff_Member_view.png">
+									<br>
+									<br>
+								</ol>
+								<hr>
+							</section>
+
+							<section id="Accountant">
+								<h4><strong>6) Accountant:</strong></h4>
+								<p>You can manage all information about Accountant.</p>
+								<img alt="Staff Member" src="images/screenshot/accountant_list.png">
+								<br>
+								<ol>
+									<h5><strong>
+											<li>Add Accountant Information:</li>
+										</strong></h5>
+									<p>Here you can add a new accountant by filling this form.</p>
+									<img alt="add-patient " src="images/screenshot/accountant_add.png"><br><br>
+									<br>
+									<h5><strong>
+											<li>Edit Accountant Information:</li>
+										</strong></h5>
+									<p>Here you can edit a accountant details.</p>
+									<img alt="add-patient " src="images/screenshot/accountant_edit.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>Upload Accountant CSV File:</li>
+										</strong></h5>
+									<p>You can upload bulk of Accountant data in csv. </p>
+									<img alt="add-patient "
+										src="images/screenshot/admin side/upload_Accountant.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>Export Accountant CSV File:</li>
+										</strong></h5>
+									<p>You can export Accountant data in csv format by clicking on the Export selected
+										button.
+									</p>
+									<img alt="add-patient "
+										src="images/screenshot/admin side/export_Accountant.png"><br><br>
+									<br>
 
 
-				<h5><strong><li>View Accountant:</li></strong></h5> 
-              	<p>Admin can view detail of particular Accountant by clicking on view button.</p>
-				<img alt="view detail" src="images/screenshot/admin side/accountant_view.png">
-             	<br>
-            	<br> 
-			</ol>
-			<hr>
-		</section>
+									<h5><strong>
+											<li>View Accountant:</li>
+										</strong></h5>
+									<p>Admin can view detail of particular Accountant by clicking on view button.</p>
+									<img alt="view detail" src="images/screenshot/admin side/accountant_view.png">
+									<br>
+									<br>
+								</ol>
+								<hr>
+							</section>
 
-		<section id="Gatekeeper">
-			<h4><strong>7) Gatekeeper:</strong></h4>
-            <p>You can manage all information about Gatekeeper.</p>
-            <img alt="Staff Member" src="images/screenshot/gate_kepper_list.png">
-            <br>
-            <ol>
-				<h5><strong><li>Add Gatekeeper Information:</li></strong></h5> 
-				<p>You can add new Gatekeeper, manage all Gatekeepers and view complete list of all Gatekeepers.</p>
-				<img alt="add-patient " src="images/screenshot/gate_kepper_add.png"><br><br>
-            	<br> 
-				
-				<h5><strong><li>Upload Gatekeeper CSV File:</li></strong></h5>
-				<p>You can upload bulk of Gatekeeper data in csv. </p>
-				<img alt="add-patient " src="images/screenshot/admin side/upload_gatekeeper.png"><br><br>
-            	<br> 
+							<section id="Gatekeeper">
+								<h4><strong>7) Gatekeeper:</strong></h4>
+								<p>You can manage all information about Gatekeeper.</p>
+								<img alt="Staff Member" src="images/screenshot/gate_kepper_list.png">
+								<br>
+								<ol>
+									<h5><strong>
+											<li>Add Gatekeeper Information:</li>
+										</strong></h5>
+									<p>You can add a new Gatekeeper, manage all Gatekeepers, and view a complete list of
+										all Gatekeepers.</p>
+									<img alt="add-patient " src="images/screenshot/gate_kepper_add.png"><br><br>
+									<br>
 
-				<h5><strong><li>Export Gatekeeper CSV File:</li></strong></h5>
-				<p>You can export Gatekeeper data in csv format by clicking on the Export selected button.
-				</p>
-				<img alt="add-patient " src="images/screenshot/admin side/export_gatekeeper.png"><br><br>
-            	<br> 
+									<h5><strong>
+											<li>Edit Gatekeeper Information:</li>
+										</strong></h5>
+									<p>You can edit Gatekeeper information.</p>
+									<img alt="add-patient " src="images/screenshot/gate_kepper_edit.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>Upload Gatekeeper CSV File:</li>
+										</strong></h5>
+									<p>You can upload bulk of Gatekeeper data in csv. </p>
+									<img alt="add-patient "
+										src="images/screenshot/admin side/upload_gatekeeper.png"><br><br>
+									<br>
+
+									<h5><strong>
+											<li>Export Gatekeeper CSV File:</li>
+										</strong></h5>
+									<p>You can export Gatekeeper data in csv format by clicking on the Export selected
+										button.
+									</p>
+									<img alt="add-patient "
+										src="images/screenshot/admin side/export_gatekeeper.png"><br><br>
+									<br>
 
 
-				<h5><strong><li>View Gatekeeper:</li></strong></h5> 
-              	<p>Admin can view detail of particular Gatekeeper by clicking on view button.</p>
-				<img alt="view detail" src="images/screenshot/admin side/gate_kepper_view.png">
-             	<br>
-            	<br> 
-			</ol>
-			<hr>
-		</section>
-			
+									<h5><strong>
+											<li>View Gatekeeper:</li>
+										</strong></h5>
+									<p>Admin can view detail of particular Gatekeeper by clicking on view button.</p>
+									<img alt="view detail" src="images/screenshot/admin side/gate_kepper_view.png">
+									<br>
+									<br>
+								</ol>
+								<hr>
+							</section>
 
-		<section id="membership">
-            <h4><strong>8) Committee Member:</strong></h4>	
-            <p>You can view complete list of all Committee Member.</p>
-            <img alt="group" src="images/screenshot/commitee_member.png"><br><br>
-			<hr>
-		</section>
-			
-		<section id="visitor_manage">
-            <h4><strong>9)  Visitor Management:</strong></h4>	
-           
-			<ol>
-				<h5><strong><li>Manage Gate : </li></strong></h5	>
-				<p>Admin can manage all gates.</p>
-				<img alt="Manage Gates" src="images/screenshot/visitor_manage_gate.png"><br>
 
-				<h5 id="visitor_manage11"><strong><li>Visitor Check In List:</li></strong></h5> 
-				<p>Here admin can view all visitor Check In list and also checkout .</p>
-				<img alt="Manage Gates" src="images/screenshot/visitor_cheklist.png"><br><br>
+							<section id="membership">
+								<h4><strong>8) Committee Member:</strong></h4>
+								<p>You can view complete list of all Committee Member.</p>
+								<img alt="group" src="images/screenshot/commitee_member.png"><br><br>
+								<hr>
+							</section>
 
-				<h5><strong><li>View Visitor Request:</li></strong></h5> 
-				<p>In Visitor Request list click on view button you can view Visitor Request.</p>
-				<img alt="notice_view" src="images/screenshot/Visitor_Request_view.png"><br><br>
-				
-				<h5><strong><li> Print Visitor Request Details :</li></strong></h5	> 
-				<p>Admin can Print Approved Visitor Request Details .</p>
-				<img alt="Manage Gates" src="images/screenshot/view_request-details.png"><br><br>
-				
-				<h5><strong><li>Visitor Check In :</li></strong></h5	> 
-				<p>Admin can add visitor Check In entry.</p>
-				<img alt="Manage Gates" src="images/screenshot/visitor_checkin_form.png"><br><br>
-				
-				<h5><strong><li>Staff Check In List :</li></strong></h5	> 
-				<p>Admin can view all staff Check In list and also checkout staff from staff checklist.</p>
-				<img alt="Manage Gates" src="images/screenshot/visitor_staff_checkin_list.png"><br><br>
+							<section id="document_manage">
+								<h4><strong>9) Document:</strong></h4>
+								<p>You can see and manage all document.</p>
+								<img alt="document_list" src="images/screenshot/document_list.png"><br><br>
+								<ol>
+									<h5><strong>
+											<li>Add Document:</li>
+										</strong></h5>
+									<p>Here you can add new document. </p>
+									<img alt="document_add_document"
+										src="images/screenshot/document_add_document.png"><br><br>
 
-				<h5><strong><li>View Staff Check In Details:</li></strong></h5> 
-				<p>In Visitor Request list click on view button you can view Visitor Request.</p>
-				<img alt="notice_view" src="images/screenshot/visitor_staff_checkin_view.png"><br><br>
+									<h5><strong>
+											<li>Edit Document:</li>
+										</strong></h5>
+									<p>Here you can edit document. </p>
+									<img alt="document_edit_document"
+										src="images/screenshot/document_edit_document.png"><br><br>
+								</ol>
+								<hr>
+							</section>
 
-				<h5><strong><li>Staff Check In :</li></strong></h5	> 
-				<p>Admin can add staff Check In list.</p>
-				<img alt="Manage Gates" src="images/screenshot/visitor_staff_checkin.png"><br><br>
-			</ol>
-            <hr>
-        </section>
-		
-		<section id="notice_event">
-            <h4><strong>10) Notice And Event:</strong></h4>	
-           
-			<ol>
-				<h5><strong><li>Notice List : </li></strong></h5	>
-				<p>Here You can see and manage all notice.</p>
-				<img alt="Manage Notice" src="images/screenshot/notice_list.png"><br>
-				<h5><strong><li>View Notice:</li></strong></h5> 
-				<p>In notice list click on view button you can view notice.</p>
-				<img alt="notice_view" src="images/screenshot/notice_view.png"><br><br>
-				<h5><strong><li>Add Notice :</li></strong></h5> 				
-				<img alt="notice_add" src="images/screenshot/notice_add.png"><br><br>
-				<h5><strong><li>Event List:</li></strong></h5	> 
-				<p>Here You can see and manage all event.</p>
-				<img alt="event_list" src="images/screenshot/event_list.png"><br><br>
-				<h5><strong><li>View Event:</li></strong></h5	> 
-				
-				<img alt="event_view" src="images/screenshot/event_view.png"><br><br>
-				<h5><strong><li>Event Add:</li></strong></h5	> 
-				<p>Here You can add new event.</p>
-				<img alt="event_add" src="images/screenshot/event_add.png"><br><br>
-			</ol>
-					
-					
-            <hr>
-        </section>
-		
-		<section id="complaint_manage">
-            <h4><strong>11) Complain:</strong></h4>	
-            <p>You can see and manage all complain.</p>
-           
-            <img alt="complaint_list" src="images/screenshot/complaint_list.png"><br><br>
-			<ol>
-				<h5><strong><li>Add Complain:</li></strong></h5	> 
-				<p> </p>
-				<img alt="complaint_add" src="images/screenshot/complaint_add.png"><br><br>
-				<h5><strong><li>View Complain:</li></strong></h5	> 
-				<p> </p>
-				<img alt="complaint_view" src="images/screenshot/complaint_view.png"><br><br>
-			</ol>
-            <hr>			
-        </section>
-		
-		<section id="parkingmanage">
-            <h4><strong>12) Parking Manager:</strong></h4>	
-           
-			<ol>
-				<h5><strong><li>Sloat List : </li></strong></h5	>
-				<p>Here You can see and manage all sloat.</p>
-				<img alt="parking_slot_list" src="images/screenshot/parking_slot_list.png"><br><br>
-				<h5><strong><li>View Sloat:</li></strong></h5> 
-				<p>In Sloat list click on view button you can view Sloat.</p>
-				<img alt="Sloat_view" src="images/screenshot/Sloat_view.png"><br><br>
-				<h5><strong><li>Add Sloat:</li></strong></h5> 
-				<p>Here You can add new sloat.</p>
-				<img alt="parking_add_slot_list" src="images/screenshot/parking_add_slot_list.png"><br><br>
+							<section id="complaint_manage">
+								<h4><strong>10) Complaint:</strong></h4>
+								<p>You can see and manage all complain.</p>
 
-				<h5><strong><li>Assigned Sloat List :</li></strong></h5> 	
-				<p>Here You can see and manage all assigned sloat list.</p>
-				<img alt="parking_assign_slot_list" src="images/screenshot/parking_assign_slot_list.png"><br><br>
-				<h5><strong><li>View Assigned Sloat:</li></strong></h5> 
-				<p>In Assigned Sloat list click on view button you can view Assigned Sloat.</p>
-				<img alt="Assigned_Sloat_view" src="images/screenshot/Assigned_Sloat_view.png"><br><br>
-				<h5><strong><li>Assigned Sloat:</li></strong></h5> 
-				<p>Here You can assign sloat.</p>
-				<img alt="parking_assign_slot" src="images/screenshot/parking_assign_slot.png"><br><br>
-				
-			</ol>
-            <hr>
-        </section>
-		
-		<section id="service_manage">
-			<h4><strong>13) Services:</strong></h4>	
-            <p>You can see and manage all services.</p>
-           
-            <img alt="service_list" src="images/screenshot/service_list.png"><br><br>
-			<ol>
-				<h5><strong><li>View Services:</li></strong></h5> 
-				<p>In Services list click on view button you can view Services.</p>
-				<img alt="Services_view" src="images/screenshot/Services_view.png"><br><br>
+								<img alt="complaint_list" src="images/screenshot/complaint_list.png"><br><br>
+								<ol>
+									<h5><strong>
+											<li>Add Complain:</li>
+										</strong></h5>
+									<p>Here you can add a new complaint.</p>
+									<img alt="complaint_add" src="images/screenshot/complaint_add.png"><br><br>
 
-				<h5><strong><li>Add Service:</li></strong></h5	> 
-				<p>Here you can add new service. </p>
-				<img alt="service_add" src="images/screenshot/service_add.png"><br><br>
-				
-			</ol>	
-            <hr>
-        </section>
-		
-		<section id="facility_manage">
-            <h4><strong>14) Facility:</strong></h4>	
-			<ol>
-				<h5><strong><li>Facility List : </li></strong></h5	>
-				<p>Here You can see and manage all facility.</p>
-				<img alt="facility_list" src="images/screenshot/facility_list.png"><br>
-				<h5><strong><li>View Facility:</li></strong></h5> 
-				<p>In Facility list click on view button you can view Facility.</p>
-				<img alt="Assigned_Sloat_view" src="images/screenshot/Facility_view.png"><br><br>
-				<h5><strong><li>Add Facility:</li></strong></h5	> 
-				<p>Here You can add new facility.</p>
-				<img alt="facility_add" src="images/screenshot/facility_add.png"><br><br>
-				<h5><strong><li>Booking Facility List :</li></strong></h5> 	
-				<p>Here You can see and manage all booking facility list.</p>
-				<img alt="facility_booking_list" src="images/screenshot/facility_booking_list.png"><br><br>
-				<h5><strong><li>View Booking Facility:</li></strong></h5> 
-				<p>In Booking Facility list click on view button you can view Booking Facility.</p>
-				<img alt="Booking_Facility_view" src="images/screenshot/Booking_Facility_view.png"><br><br>
-				<h5><strong><li>Book Facility:</li></strong></h5> 
-				<p>Here You can book facility.</p>
-				<img alt="facility_book" src="images/screenshot/facility_book.png"><br><br>		
-			</ol>						
-            <hr>
-        </section>
-		
-		<section id="account_manage">
-            <h4><strong>15) Accounts:</strong></h4>	
-           
-			<ol>
-				<h5><strong><li>Invoice List : </li></strong></h5	>
-				<p>Here You can see invoice.</p>
-				<img alt="invoice_list" src="images/screenshot/admin side/invoice_list.png"><br>
-				<h5><strong><li>Charges List:</li></strong></h5	> 
-				<p>Here you see can manage charges list.</p>
-				<img alt="invoice_charges_list" src="images/screenshot/admin side/charge_list.png"><br><br>	
-				<h5><strong><li>Add Charges:</li></strong></h5	> 
-				<p>Here you can add member charges.</p>
-				<img alt="invoice_add_charges" src="images/screenshot/admin side/add_charge.png"><br><br>	
-				<h5><strong><li>ExpenseList:</li></strong></h5	> 
-				<p>Here you see can manage Expenselist.</p>
-				<img alt="invoice_expence_list" src="images/screenshot/admin side/expanse_list.png"><br><br>	
-				<h5><strong><li>Add Expence:</li></strong></h5	> 
-				<p>Here you add Expense entry.</p>
-				<img alt="invoice_add_expence" src="images/screenshot/admin side/add_expanse.png"><br><br>	
-			</ol>						
-            <hr>
-        </section>
-		
-		<section id="document_manage">
-            <h4><strong>16) Document:</strong></h4>	      
-            <p>You can see and manage all document.</p>          
-            <img alt="document_list" src="images/screenshot/document_list.png"><br><br>
-			<ol>
-				<h5><strong><li>Add Document:</li></strong></h5	> 
-				<p>Here you can add new document. </p>
-				<img alt="document_add_document" src="images/screenshot/document_add_document.png"><br><br>
-			</ol>
-            <hr>
-        </section>
-		
-		<section id="assets_inventory_manage">
-            <h4><strong>17) Asset/Inventory :</strong></h4>	
-           
-			<ol>
-				<h5><strong><li>Assets List : </li></strong></h5	>
-				<p>Here You can see and manage all assets.</p>
-				<img alt="assets_list" src="images/screenshot/assets_list.png"><br>
-				<h5><strong><li>View Assets:</li></strong></h5> 
-				<p>In Assets list click on view button you can view Assets.</p>
-				<img alt="Booking_Facility_view" src="images/screenshot/Assets_view.png"><br><br>
-				<h5><strong><li>Add Asset:</li></strong></h5	> 
-				<p>Here You can add new asset.</p>
-				<img alt="assets_add" src="images/screenshot/assets_add.png"><br><br>
-				<h5><strong><li>Inventory List :</li></strong></h5> 	
-				<p>Here You can see and manage all Inventory.</p>
-				<img alt="assets_inventory_list" src="images/screenshot/assets_inventory_list.png"><br><br>
-				<h5><strong><li>View Inventory:</li></strong></h5> 
-				<p>In Inventory list click on view button you can view Inventory.</p>
-				<img alt="Booking_Facility_view" src="images/screenshot/Inventory_view.png"><br><br>
-				<h5><strong><li>Add Inventory:</li></strong></h5	> 
-				<p>Here You can add new Inventory.</p>
-				<img alt="assets_add_inventory" src="images/screenshot/assets_add_inventory.png"><br><br>
-				
-			</ol>						
-            <hr>
-        </section>
-		
-		<section id="assets_inventory_manage">
-            <h4><strong>18) Mail Templates :</strong></h4>	
-           <p>From this module you can set notification mail templates. You can also enable or disable this notification mail from general settings.</p>          
-            <img alt="document_list" src="images/screenshot/Mail-Templates.png"><br><br>
-			<p> Each template also have shortcodes. So you can use that shortcodes in your mail template. Following Shortcodes are available in mail templates.</p>
-				<ul>
-					<li><strong>{{apartment_name}} :</strong>  Display apartment name in mail.</li>
-					<li><strong>{{member_name}}  :</strong>  Display member name in mail.</li>
-					<li><strong>{{unit_name}} :</strong>  Display unit name in mail.</li>
-					<li><strong>{{building_name}} :</strong>  Display building name in mail.</li>
-					<li><strong>{{loginlink}} :</strong>  Display login link in mail.</li>
-					<li><strong>{{rolename}} :</strong>  Display role name in mail.</li>
-					<li><strong>{{username}} :</strong>  Display user name in mail.</li>
-					<li><strong>{{password}} :</strong>  Display password in mail.</li>
-					<li><strong>{{notice_title}} :</strong>  Display notice title name in mail.</li>
-					<li><strong>{{notice_type}} :</strong>  Display notice type in mail.</li>
-					<li><strong>{{notice_valid_date}} :</strong>  Display notice valid date in mail.</li>
-					<li><strong>{{notice_content}} :</strong>  Display notice content in mail.</li>
-					<li><strong>{{event_title}} :</strong>  Display event title in mail.</li>
-					<li><strong>{{event_start_date}} :</strong>  Display event start date in mail.</li>
-					<li><strong>{{event_end_date}} :</strong>  Display event end date in mail.</li>
-					<li><strong>{{event_start_time}} :</strong>  Display event start time in mail.</li>
-					<li><strong>{{event_end_time}} :</strong>  Display event end time in mail.</li>
-					<li><strong>{{event_description}} :</strong>  Display event description in mail.</li>
-					<li><strong>{{nature}} :</strong>  Display complaint nature in mail.</li>
-					<li><strong>{{noticetype}} :</strong>  Display notice type in mail.</li>
-					<li><strong>{{noticecategory}} :</strong>  Display notice category in mail.</li>
-					<li><strong>{{complaintstatus}} :</strong>  Display complaint status in mail.</li>
-					<li><strong>{{description}} :</strong>  Display complaint description in mail.</li>
-					<li><strong>{{slotname}} :</strong>  Display assigned slotname for parking in mail.</li>
-					<li><strong>{{startdate}} :</strong>  Display start date of assigned parking sloat in mail.</li>
-					<li><strong>{{enddate}} :</strong>  Display end date of assigned parking sloat in mail.</li>
-					<li><strong>{{vehiclenumber}} :</strong>  Display vehicle number of assigned parking in mail.</li>
-					<li><strong>{{vehiclemodel}} :</strong>  Display vehicle model of assigned parking in mail.</li>
-					<li><strong>{{vehicletype}} :</strong>  Display vehicle type of assigned parking in mail.</li>
-					<li><strong>{{RFID}} :</strong>  Display RFID of assigned parking in mail.</li>
-					<li><strong>{{facility_name}} :</strong>  Display facility name in mail.</li>
-					<li><strong>{{booked_user_name}} :</strong>  Display facility booked by user name in mail.</li>
-					<li><strong>{{activity_name}} :</strong>  Display activity name of facility booking in mail.</li>
-					<li><strong>{{from_date}} :</strong>  Display from date facility booking in mail.</li>
-					<li><strong>{{to_date}} :</strong>  Display end date facility booking in mail.</li>
-					<li><strong>{{from_time}} :</strong>  Display from time facility booking in mail.</li>
-					<li><strong>{{to_time}} :</strong>  Display end time facility booking in mail.</li>
-					<li><strong>{{facility_charge}} :</strong>  Display facility charge of facility booking in mail.</li>
-					<li><strong>{{invoiceno}} :</strong>  Display invoice no in mail.</li>
-					<li><strong>{{Receiver Name}} :</strong>  Display receiver name of message in mail.</li>
-					<li><strong>{{Sender Name}} :</strong>  Display sender name of message in mail.</li>
-					<li><strong>{{Message Content}} :</strong>  Display message content of message in mail.</li>
-				</ul>
-			<hr>
-        </section>
-		
-		<section id="message_manage">
-            <h4><strong>19) Message :</strong></h4>	
-           
-			<ol>
-				<h5><strong><li>Inbox : </li></strong></h5	>
-				<p>Here You can see all recevied message from other user.You can see sent message from sentbox page</p>
-				<img alt="message_inbox" src="images/screenshot/message_inbox.png"><br><br>
-				<h5><strong><li>Sentbox : </li></strong></h5	>
-				<p>view list of all sent Messages.</p>
-				<img alt="message_sentbox" src="images/screenshot/message_sentbox.png"><br><br>
-				<h5><strong><li>Compose Message:</li></strong></h5> 
-				<p>Here You send message to other users.</p>
-				<img alt="message_compose" src="images/screenshot/message_compose.png"><br><br>
-				
-			</ol>						
-            <hr>
-        </section>
-		
-		<section id="account_manage">
-            <h4><strong>20) Report :</strong></h4>	
-			<ol>
-				<h5><strong><li>Units By Building : </li></strong></h5	>
-				<p>Here You can see report units by building.</p>
-				<img alt="report_unit_by_building" src="images/screenshot/report_unit_by_building.png"><br>
-				<h5><strong><li>Members By Building :</li></strong></h5	> 
-				<p>1.Graph : Here you can see number of members by building Graph report.</p>
-				<img alt="report_member_by_builging" src="images/screenshot/report_member_by_builging.png"><br><br>
+									<h5><strong>
+											<li>Edit Complain:</li>
+										</strong></h5>
+									<p>Here you can edit the complaint details.</p>
+									<img alt="complaint_edit" src="images/screenshot/complaint_edit.png"><br><br>
 
-				<p>2.Datatable : Here you can see number of members by building Data by Datatable.</p>
-				<img alt="report_member_by_builging" src="images/screenshot/report_member_by_building_datatable.png"><br><br>
+									<h5><strong>
+											<li>View Complain:</li>
+										</strong></h5>
+									<p>Here you can view complain details. </p>
+									<img alt="complaint_view" src="images/screenshot/complaint_view.png"><br><br>
+								</ol>
+								<hr>
+							</section>
 
-				<!-- <h5><strong><li>Payment :</li></strong></h5	> 
+							<section id="parkingmanage">
+								<h4><strong>11) Parking Manager:</strong></h4>
+
+								<ol>
+									<h5><strong>
+											<li>Sloat List : </li>
+										</strong></h5>
+									<p>Here You can see and manage all sloat.</p>
+									<img alt="parking_slot_list" src="images/screenshot/parking_slot_list.png"><br><br>
+									<h5><strong>
+											<li>View Sloat:</li>
+										</strong></h5>
+									<p>In Sloat list click on view button you can view Sloat.</p>
+									<img alt="Sloat_view" src="images/screenshot/Sloat_view.png"><br><br>
+									<h5><strong>
+											<li>Add Sloat:</li>
+										</strong></h5>
+									<p>Here You can add new sloat.</p>
+									<img alt="parking_add_slot_list"
+										src="images/screenshot/parking_add_slot_list.png"><br><br>
+									<h5><strong>
+											<li>Edit Sloat:</li>
+										</strong></h5>
+									<p>Here You can edit sloat.</p>
+									<img alt="parking_edit_slot_list"
+										src="images/screenshot/parking_edit_slot_list.png"><br><br>
+
+									<h5><strong>
+											<li>Assigned Sloat List :</li>
+										</strong></h5>
+									<p>Here You can see and manage all assigned sloat list.</p>
+									<img alt="parking_assign_slot_list"
+										src="images/screenshot/parking_assign_slot_list.png"><br><br>
+									<h5><strong>
+											<li>View Assigned Sloat:</li>
+										</strong></h5>
+									<p>In Assigned Sloat list click on view button you can view Assigned Sloat.</p>
+									<img alt="Assigned_Sloat_view"
+										src="images/screenshot/Assigned_Sloat_view.png"><br><br>
+									<h5><strong>
+											<li>Assigned Sloat:</li>
+										</strong></h5>
+									<p>Here You can assign sloat.</p>
+									<img alt="parking_assign_slot"
+										src="images/screenshot/parking_assign_slot.png"><br><br>
+									<h5><strong>
+											<li>Edit Assigned Sloat:</li>
+										</strong></h5>
+									<p>Here You can edit assign sloat.</p>
+									<img alt="parking_assign_slot"
+										src="images/screenshot/parking_assign_slot_edit.png"><br><br>
+
+								</ol>
+								<hr>
+							</section>
+							<section id="visitor_manage">
+								<h4><strong>12) Visitor Management:</strong></h4>
+
+								<ol>
+									<h5><strong>
+											<li>Manage Gate : </li>
+										</strong></h5>
+									<p>Admin can manage all gates.</p>
+									<img alt="Manage Gates" src="images/screenshot/visitor_manage_gate.png"><br>
+
+									<h5 id="visitor_manage11"><strong>
+											<li>Visitor Check In List:</li>
+										</strong></h5>
+									<p>Here admin can view all visitor Check In list and also checkout .</p>
+									<img alt="Manage Gates" src="images/screenshot/visitor_cheklist.png"><br><br>
+
+									<h5><strong>
+											<li>View Visitor Request:</li>
+										</strong></h5>
+									<p>In Visitor Request list click on view button you can view Visitor Request.</p>
+									<img alt="notice_view" src="images/screenshot/Visitor_Request_view.png"><br><br>
+
+									<h5><strong>
+											<li> Print Visitor Request Details :</li>
+										</strong></h5>
+									<p>Admin can Print Approved Visitor Request Details .</p>
+									<img alt="Manage Gates" src="images/screenshot/view_request-details.png"><br><br>
+
+									<h5><strong>
+											<li>Visitor Check In :</li>
+										</strong></h5>
+									<p>Admin can add visitor Check In entry.</p>
+									<img alt="Manage Gates" src="images/screenshot/visitor_checkin_form.png"><br><br>
+
+									<h5><strong>
+											<li>Edit Visitor Request :</li>
+										</strong></h5>
+									<p>Admin can edit visitor request details.</p>
+									<img alt="Manage Gates" src="images/screenshot/visitor_checkin_edit.png"><br><br>
+
+									<h5><strong>
+											<li>Staff Check In List :</li>
+										</strong></h5>
+									<p>Admin can view all staff Check In list and also checkout staff from staff
+										checklist.</p>
+									<img alt="Manage Gates"
+										src="images/screenshot/visitor_staff_checkin_list.png"><br><br>
+
+									<h5><strong>
+											<li>View Staff Check In Details:</li>
+										</strong></h5>
+									<p>In Visitor Request list click on view button you can view Visitor Request.</p>
+									<img alt="notice_view"
+										src="images/screenshot/visitor_staff_checkin_view.png"><br><br>
+
+									<h5><strong>
+											<li>Add Staff Check In :</li>
+										</strong></h5>
+									<p>Admin can add staff Check In list.</p>
+									<img alt="Manage Gates" src="images/screenshot/visitor_staff_checkin.png"><br><br>
+									<h5><strong>
+											<li>Edit Staff Check In :</li>
+										</strong></h5>
+									<p>Admin can edit staff Check In list.</p>
+									<img alt="Manage Gates"
+										src="images/screenshot/visitor_staff_checkin_edit.png"><br><br>
+
+									<h5><strong>
+											<li>Staff Check Out :</li>
+										</strong></h5>
+									<p>Admin can staff check-out.</p>
+									<img alt="visitor_management" src="images/staff_member/staff_checkout.png"><br>
+								</ol>
+								<hr>
+							</section>
+
+							<section id="notice_event">
+								<h4><strong>13) Notice And Event:</strong></h4>
+
+								<ol>
+									<h5><strong>
+											<li>Notice List : </li>
+										</strong></h5>
+									<p>Here You can see and manage all notice.</p>
+									<img alt="Manage Notice" src="images/screenshot/notice_list.png"><br>
+									<h5><strong>
+											<li>View Notice:</li>
+										</strong></h5>
+									<p>In notice list click on view button you can view notice.</p>
+									<img alt="notice_view" src="images/screenshot/notice_view.png"><br><br>
+									<h5><strong>
+											<li>Add Notice :</li>
+										</strong></h5>
+									<p>Here you can add a new notice.</p>
+									<img alt="notice_add" src="images/screenshot/notice_add.png"><br><br>
+									<h5><strong>
+											<li>Edit Notice :</li>
+										</strong></h5>
+									<p>Here you can edit a notice details.</p>
+									<img alt="notice_add" src="images/screenshot/notice_edit.png"><br><br>
+									<h5><strong>
+											<li>Event List:</li>
+										</strong></h5>
+									<p>Here You can see and manage all event.</p>
+									<img alt="event_list" src="images/screenshot/event_list.png"><br><br>
+									<h5><strong>
+											<li>View Event:</li>
+										</strong></h5>
+									<p>Here You can view event details.</p>
+									<img alt="event_view" src="images/screenshot/event_view.png"><br><br>
+									<h5><strong>
+											<li>Add Event:</li>
+										</strong></h5>
+									<p>Here You can add new event.</p>
+									<img alt="event_add" src="images/screenshot/event_add.png"><br><br>
+									<h5><strong>
+											<li>Edit Event:</li>
+										</strong></h5>
+									<p>Here You can edit event details.</p>
+									<img alt="event_add" src="images/screenshot/event_edit.png"><br><br>
+								</ol>
+
+
+								<hr>
+							</section>
+
+							<section id="message_manage">
+								<h4><strong>14) Message :</strong></h4>
+
+								<ol>
+									<h5><strong>
+											<li>Inbox : </li>
+										</strong></h5>
+									<p>Here You can see all recevied message from other user.You can see sent message
+										from sentbox page</p>
+									<img alt="message_inbox" src="images/screenshot/message_inbox.png"><br><br>
+									<h5><strong>
+											<li>Sentbox : </li>
+										</strong></h5>
+									<p>view list of all sent Messages.</p>
+									<img alt="message_sentbox" src="images/screenshot/message_sentbox.png"><br><br>
+									<h5><strong>
+											<li>Compose Message:</li>
+										</strong></h5>
+									<p>Here You send message to other users.</p>
+									<img alt="message_compose" src="images/screenshot/message_compose.png"><br><br>
+
+								</ol>
+								<hr>
+							</section>
+
+							<section id="service_manage">
+								<h4><strong>15) Services:</strong></h4>
+								<p>You can see and manage all services.</p>
+
+								<img alt="service_list" src="images/screenshot/service_list.png"><br><br>
+								<ol>
+									<h5><strong>
+											<li>View Services:</li>
+										</strong></h5>
+									<p>In Services list click on view button you can view Services.</p>
+									<img alt="Services_view" src="images/screenshot/Services_view.png"><br><br>
+
+									<h5><strong>
+											<li>Add Service:</li>
+										</strong></h5>
+									<p>Here you can add new service. </p>
+									<img alt="service_add" src="images/screenshot/service_add.png"><br><br>
+
+									<h5><strong>
+											<li>Edit Service:</li>
+										</strong></h5>
+									<p>Here you can edit service. </p>
+									<img alt="service_add" src="images/screenshot/service_edit.png"><br><br>
+
+								</ol>
+								<hr>
+							</section>
+
+							<section id="facility_manage">
+								<h4><strong>16) Facility:</strong></h4>
+								<ol>
+									<h5><strong>
+											<li>Facility List : </li>
+										</strong></h5>
+									<p>Here You can see and manage all facility.</p>
+									<img alt="facility_list" src="images/screenshot/facility_list.png"><br>
+									<h5><strong>
+											<li>View Facility:</li>
+										</strong></h5>
+									<p>In Facility list click on view button you can view Facility.</p>
+									<img alt="Assigned_Sloat_view" src="images/screenshot/Facility_view.png"><br><br>
+									<h5><strong>
+											<li>Add Facility:</li>
+										</strong></h5>
+									<p>Here You can add new facility.</p>
+									<img alt="facility_add" src="images/screenshot/facility_add.png"><br><br>
+									<h5><strong>
+											<li>Edit Facility:</li>
+										</strong></h5>
+									<p>Here You can edit facility.</p>
+									<img alt="facility_add" src="images/screenshot/facility_edit.png"><br><br>
+									<h5><strong>
+											<li>Booking Facility List :</li>
+										</strong></h5>
+									<p>Here You can see and manage all booking facility list.</p>
+									<img alt="facility_booking_list"
+										src="images/screenshot/facility_booking_list.png"><br><br>
+									<h5><strong>
+											<li>View Booking Facility:</li>
+										</strong></h5>
+									<p>In Booking Facility list click on view button you can view Booking Facility.</p>
+									<img alt="Booking_Facility_view"
+										src="images/screenshot/Booking_Facility_view.png"><br><br>
+									<h5><strong>
+											<li>Add Book Facility:</li>
+										</strong></h5>
+									<p>Here You can book facility.</p>
+									<img alt="facility_book" src="images/screenshot/facility_book.png"><br><br>
+									<h5><strong>
+											<li>Edit Book Facility:</li>
+										</strong></h5>
+									<p>Here You can edit book facility.</p>
+									<img alt="facility_book" src="images/screenshot/facility_book_edit.png"><br><br>
+								</ol>
+								<hr>
+							</section>
+
+							<section id="account_manage">
+								<h4><strong>17) Accounts:</strong></h4>
+
+								<ol>
+									<h5><strong>
+											<li>Tax List:</li>
+										</strong></h5>
+									<p>Here you see Tax list.</p>
+									<img alt="invoice_expence_list"
+										src="images/screenshot/admin side/tax_list.png"><br><br>
+									<h5><strong>
+											<li>Add Tax:</li>
+										</strong></h5>
+									<p>Here you add Tax entry.</p>
+									<img alt="invoice_add_expence"
+										src="images/screenshot/admin side/tax_add.png"><br><br>
+									<h5><strong>
+											<li>Edit Tax:</li>
+										</strong></h5>
+									<p>Here you edit Tax entry.</p>
+									<img alt="invoice_add_expence"
+										src="images/screenshot/admin side/tax_edit.png"><br><br>
+
+									<h5><strong>
+											<li>Invoice List : </li>
+										</strong></h5>
+									<p>Here You can see invoice.</p>
+									<img alt="invoice_list" src="images/screenshot/admin side/invoice_list.png"><br>
+
+									<h5><strong>
+											<li>Invoice View : </li>
+										</strong></h5>
+									<p>Here You can see view invoice.</p>
+									<img alt="invoice_list" src="images/screenshot/admin side/invoice_view.png"><br>
+
+									<h5><strong>
+											<li>Invoice Print : </li>
+										</strong></h5>
+									<p>Here You can see view invoice print.</p>
+									<img alt="invoice_list" src="images/screenshot/admin side/invoice_print.png"><br>
+
+									<h5><strong>
+											<li>Charges List:</li>
+										</strong></h5>
+									<p>Here you see can manage charges list.</p>
+									<img alt="invoice_charges_list"
+										src="images/screenshot/admin side/charge_list.png"><br><br>
+									<h5><strong>
+											<li>Add Charges:</li>
+										</strong></h5>
+									<p>Here you can add member charges and if you want to create invoice for Tenant, you have to enable 'Want To Create Invoice For Tenant?' option in General Settings.</p>
+									<img alt="invoice_add_charges"
+										src="images/screenshot/admin side/add_charge.png"><br><br>
+									<h5><strong>
+											<li>Edit Charges:</li>
+										</strong></h5>
+									<p>Here you can edit member charges.</p>
+									<img alt="invoice_add_charges"
+										src="images/screenshot/admin side/edit_charge.png"><br><br>
+									<h5><strong>
+											<li>Expense List:</li>
+										</strong></h5>
+									<p>Here you see can manage Expense list.</p>
+									<img alt="invoice_expence_list"
+										src="images/screenshot/admin side/expanse_list.png"><br><br>
+									<h5><strong>
+											<li>Add Expence:</li>
+										</strong></h5>
+									<p>Here you add Expense entry.</p>
+									<img alt="invoice_add_expence"
+										src="images/screenshot/admin side/add_expanse.png"><br><br>
+									<h5><strong>
+											<li>Edit Expence:</li>
+										</strong></h5>
+									<p>Here you edit Expense entry.</p>
+									<img alt="invoice_add_expence"
+										src="images/screenshot/admin side/edit_expanse.png"><br><br>
+								</ol>
+								<hr>
+							</section>
+
+							<section id="assets_inventory_manage">
+								<h4><strong>18) Asset/Inventory :</strong></h4>
+
+								<ol>
+									<h5><strong>
+											<li>Assets List : </li>
+										</strong></h5>
+									<p>Here You can see and manage all assets.</p>
+									<img alt="assets_list" src="images/screenshot/assets_list.png"><br>
+									<h5><strong>
+											<li>View Assets:</li>
+										</strong></h5>
+									<p>In Assets list click on view button you can view Assets.</p>
+									<img alt="Booking_Facility_view" src="images/screenshot/Assets_view.png"><br><br>
+									<h5><strong>
+											<li>Add Asset:</li>
+										</strong></h5>
+									<p>Here You can add new asset.</p>
+									<img alt="assets_add" src="images/screenshot/assets_add.png"><br><br>
+									<h5><strong>
+											<li>Edit Asset:</li>
+										</strong></h5>
+									<p>Here You can edit asset.</p>
+									<img alt="assets_add" src="images/screenshot/assets_edit.png"><br><br>
+									<h5><strong>
+											<li>Inventory List :</li>
+										</strong></h5>
+									<p>Here You can see and manage all Inventory.</p>
+									<img alt="assets_inventory_list"
+										src="images/screenshot/assets_inventory_list.png"><br><br>
+									<h5><strong>
+											<li>View Inventory:</li>
+										</strong></h5>
+									<p>In Inventory list click on view button you can view Inventory.</p>
+									<img alt="Booking_Facility_view" src="images/screenshot/Inventory_view.png"><br><br>
+									<h5><strong>
+											<li>Add Inventory:</li>
+										</strong></h5>
+									<p>Here You can add new Inventory.</p>
+									<img alt="assets_add_inventory"
+										src="images/screenshot/assets_add_inventory.png"><br><br>
+									<h5><strong>
+											<li>Edit Inventory:</li>
+										</strong></h5>
+									<p>Here You can edit Inventory.</p>
+									<img alt="assets_add_inventory"
+										src="images/screenshot/assets_edit_inventory.png"><br><br>
+
+								</ol>
+								<hr>
+							</section>
+
+							<section id="account_manage">
+								<h4><strong>19) Report :</strong></h4>
+								<ol>
+									<h5><strong>
+											<li>Units By Building : </li>
+										</strong></h5>
+									<p>Here You can see report units by building.</p>
+									<img alt="report_unit_by_building"
+										src="images/screenshot/report_unit_by_building.png"><br>
+									<h5><strong>
+											<li>Members By Building :</li>
+										</strong></h5>
+									<p>1.Graph : Here you can see number of members by building Graph report.</p>
+									<img alt="report_member_by_builging"
+										src="images/screenshot/report_member_by_builging.png"><br><br>
+
+									<p>2.Datatable : Here you can see number of members by building Data by Datatable.
+									</p>
+									<img alt="report_member_by_builging"
+										src="images/screenshot/report_member_by_building_datatable.png"><br><br>
+
+									<!-- <h5><strong><li>Payment :</li></strong></h5	> 
 				<p>Here you can see payment report by month.</p>
 				<img alt="report_payment" src="images/screenshot/report_payment.png"><br><br> -->
-				<h4><strong><li>Income-Expense Report </li></strong></h4> 
-				<h5><strong>Income Report :</strong></h5> 
-				<p>1.Graph: Here you can see income graph report.</p>
-				<img alt="report_payment" src="images/screenshot/report_income.png"><br><br>
-				<p>2.Datatable: Here you can see income data by datatable.</p>
-				<img alt="report_payment" src="images/screenshot/report_income_data.png"><br><br>
-				<h5><strong>Expense Report :</strong></h5> 
-				<p>Here you can see Expense graph report.</p>
-				<img alt="report_expense" src="images/screenshot/report_expense.png"><br><br>
-				<p>Here you can see Expense data by datatable.</p>
-				<img alt="report_expense" src="images/screenshot/report_expense_data.png"><br><br>
+									<h4><strong>
+											<li>Income-Expense Report </li>
+										</strong></h4>
+									<h5><strong>Income Report :</strong></h5>
+									<p>1.Graph: Here you can see income graph report.</p>
+									<img alt="report_payment" src="images/screenshot/report_income.png"><br><br>
+									<p>2.Datatable: Here you can see income data by datatable.</p>
+									<img alt="report_payment" src="images/screenshot/report_income_data.png"><br><br>
+									<h5><strong>Expense Report :</strong></h5>
+									<p>Here you can see Expense graph report.</p>
+									<img alt="report_expense" src="images/screenshot/report_expense.png"><br><br>
+									<p>Here you can see Expense data by datatable.</p>
+									<img alt="report_expense" src="images/screenshot/report_expense_data.png"><br><br>
 
-				<h5><strong>Income & Expense Report :</strong></h5> 
-				<p>Here you can see Income & Expense graph report.</p>
-				<img alt="report_expense" src="images/screenshot/report_income_expense.png"><br><br>
-				<p>Here you can see Income & Expense data by datatable.</p>
-				<img alt="report_expense" src="images/screenshot/report_net_profit.png"><br><br>
+									<h5><strong>Income & Expense Report :</strong></h5>
+									<p>Here you can see Income & Expense graph report.</p>
+									<img alt="report_expense" src="images/screenshot/report_income_expense.png"><br><br>
+									<p>Here you can see Income & Expense data by datatable.</p>
+									<img alt="report_expense" src="images/screenshot/report_net_profit.png"><br><br>
 
-				<h5><strong><li>Complaint  :</li></strong></h5	> 
-				<h5><strong>Complain Status :</strong></h5	> 
-				<p>Here you can see report complain by status.</p>
-				<img alt="report_complaint_status" src="images/screenshot/report_complaint_status.png"><br><br>
+									<h5><strong>
+											<li>Complaint :</li>
+										</strong></h5>
+									<h5><strong>Complain Status :</strong></h5>
+									<p>Here you can see report complain by status.</p>
+									<img alt="report_complaint_status"
+										src="images/screenshot/report_complaint_status.png"><br><br>
 
-				<h5><strong>Maintenance Status :</strong></h5	> 
-				<p>Here you can see report maintenance by status.</p>
-				<img alt="report_complaint_status" src="images/screenshot/report_maintainance.png"><br><br>
+									<h5><strong>Maintenance Status :</strong></h5>
+									<p>Here you can see report maintenance by status.</p>
+									<img alt="report_complaint_status"
+										src="images/screenshot/report_maintainance.png"><br><br>
 
-				<h5><strong>Request Status :</strong></h5	> 
-				<p>Here you can see report request by status.</p>
-				<img alt="report_complaint_status" src="images/screenshot/report_request.png"><br><br>
+									<h5><strong>Request Status :</strong></h5>
+									<p>Here you can see report request by status.</p>
+									<img alt="report_complaint_status"
+										src="images/screenshot/report_request.png"><br><br>
 
-				<h5><strong>Suggestion Status :</strong></h5	> 
-				<p>Here you can see report suggestion by status.</p>
-				<img alt="report_complaint_status" src="images/screenshot/report_suggetion.png"><br><br>
-				
-			</ol>						
-            <hr>
-        </section>
-		
-		<section id="access_right_manage">
-            <h4><strong>21) Access Right :</strong></h4>	
-			<p>Here you can give access right to every user by role.</p>
-			<img alt="access_right" src="images/screenshot/member_access_right.png"><br><br>
-			<img alt="access_right" src="images/screenshot/Staff_access_right.png"><br><br>
-			<img alt="access_right" src="images/screenshot/accountant_access_right.png"><br><br>
-			<img alt="access_right" src="images/screenshot/gatekeeper_access_right.png"><br><br>
-							
-            <hr>
-        </section>
-		
-		<section id="society_rules">
-            <h4><strong>22) Society Rules :</strong></h4>	
-			<p>Here you can see and manage society rules.</p>
-			<img alt="society_rules" src="images/screenshot/society_rules.png"><br>
-			<ol>
-				<h5><strong><li>Add Society Rules : </li></strong></h5	>
-				<p>Here You can add society rules.</p>
-				<img alt="society_rules_add" src="images/screenshot/society_rules_add.png"><br>			
-            <hr>
-        </section>
-		
-		<section id="faq-list">
-            <h4><strong>23) FAQ :</strong></h4>	
-			<p>Here you can see and manage FAQ.</p>
-			<img alt="faq_list" src="images/screenshot/faq_list.png"><br>
-			<ol>
-				<h5><strong><li>Add FAQ : </li></strong></h5	>
-				<p>Here You can add faq.</p>
-				<img alt="faq_add" src="images/screenshot/faq_add.png"><br>			
-            <hr>
-        </section>
-		
-		<section id="gallery-list">
-            <h4><strong>24) Gallery :</strong></h4>	
-			<p>Here you can see and manage Gallery.</p>
-			<img alt="photo_gallery_list" src="images/screenshot/photo_gallery_list.png"><br>
-			<ol>
-				<h5><strong><li>Add Gallery : </li></strong></h5	>
-				<p>Here You can add new gallery.</p>
-				<img alt="photo_gallery_add_gallery" src="images/screenshot/photo_gallery_add_gallery.png"><br>			
-            <hr>
-        </section>
-		
-	</section>
+									<h5><strong>Suggestion Status :</strong></h5>
+									<p>Here you can see report suggestion by status.</p>
+									<img alt="report_complaint_status"
+										src="images/screenshot/report_suggetion.png"><br><br>
 
-	<section id="staff-member-view">
-		<h3><strong>H)  Staff Member View</strong></h3>
-		<section id="staff-dashboard">
-            <h4><strong>1) Dashboard :</strong></h4>	
-			<p>Staff Member's dashboard.</p>
-			<img alt="dashboard" src="images/staff_member/dashboard.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-resident_unit">
-            <h4><strong>2) Resident Unit:</strong></h4>	
-			<p>Staff Member can view and manage all units.</p>
-			<img alt="resident_unit" src="images/staff_member/resident_unit.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-member_list">
-            <h4><strong>3) Member:</strong></h4>	
-			<p>Staff Member can see and manage all member.</p>
-			<img alt="member_list" src="images/staff_member/member_list.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-member_list">
-            <h4><strong>4) Staff Member:</strong></h4>	
-			<p>Staff Member can see and manage all Staff Member.</p>
-			<img alt="member_list" src="images/staff_member/staff_member_list.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-member_list">
-            <h4><strong>5) Accountant:</strong></h4>	
-			<p>Staff Member can see and manage all Accountant.</p>
-			<img alt="member_list" src="images/staff_member/accountant_list.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-member_list">
-            <h4><strong>6) Gatekeeper:</strong></h4>	
-			<p>Staff Member can see and manage all Gatekeeper.</p>
-			<img alt="member_list" src="images/staff_member/gatekeeper_list.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-committee_member">
-            <h4><strong>7) Committee Member</strong></h4>	
-			<p>Staff Member can see all committee member.</p>
-			<img alt="committee_member" src="images/staff_member/committee_member.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-visitor-manage">
-            <h4><strong>8) Visitor Management</strong></h4>	
-			<p>Staff Member can see all visitor check-in list .</p>
-			<img alt="visitor_management" src="images/staff_member/visitor_management.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-visitor-manage">
-            <h4><strong>9) Staff Checkin</strong></h4>	
-			<p>Staff Member can see all staff check-in list.</p>
-			<img alt="visitor_management" src="images/staff_member/staff_check-in.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-notice-event">
-            <h4><strong>10) Notice</strong></h4>	
-			<p>Staff Member can see and manage all notice.</p>
-			<img alt="notice_event" src="images/staff_member/notice_list.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-notice-event">
-            <h4><strong>11) Event</strong></h4>	
-			<p>Staff Member can see and manage all event.</p>
-			<img alt="notice_event" src="images/staff_member/event_list.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-complain">
-            <h4><strong>12) Complain</strong></h4>	
-			<p>Staff Member can see and manage all complaints.</p>
-			<img alt="complain" src="images/staff_member/complaint.png"><br>							
-            <hr>
-		</section>
-		<section id="notice_event">
-            <h4><strong>13) Parking Manager:</strong></h4>	
-			<ol>
-				<h5><strong><li>Sloat List : </li></strong></h5	>
-				<p>Here You can see and manage all sloat.</p>
-				<img alt="parking_slot_list" src="images/staff_member/parking_slot_list.png"><br>
-				<h5><strong><li>Add Sloat:</li></strong></h5	> 
-				<p>Here You can add new sloat.</p>
-				<img alt="parking_add_slot_list" src="images/staff_member/add_slot.png"><br><br>
-				<h5><strong><li>Assigned Sloat List :</li></strong></h5> 	
-				<p>Here You can see and manage all assigned sloat list.</p>
-				<img alt="parking_assign_slot_list" src="images/staff_member/assign_slot_list.png"><br><br>
-				<h5><strong><li>Assigned Sloat:</li></strong></h5	> 
-				<p>Here You can assign sloat.</p>
-				<img alt="parking_assign_slot" src="images/staff_member/assign_slot.png"><br><br>
-				
-			</ol>	
-            <hr>
-        </section>
-		<section id="staff-services">
-            <h4><strong>14) Services</strong></h4>	
-			<p>Staff Member can see and manage all services.</p>
-			<img alt="service" src="images/staff_member/service.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-facility">
-            <h4><strong>15) Facility</strong></h4>	
-			<p>Staff Member can see and manage all facility.</p>
-			<img alt="facility" src="images/staff_member/facility.png"><br>							
-            <hr>
-		</section>
-		<section id="Booking-facility">
-            <h4><strong>16) Booking Facility</strong></h4>	
-			<p>Staff Member can see and manage all Booking Facility.</p>
-			<img alt="facility" src="images/staff_member/booking_facility.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-document">
-            <h4><strong>17) Document</strong></h4>	
-			<p>Staff Member can see and manage all documents.</p>
-			<img alt="document" src="images/staff_member/document.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-assets-inventory">
-            <h4><strong>18) Assets</strong></h4>	
-			<p>Staff Member can see and manage all assets.</p>
-			<img alt="assets_manage" src="images/staff_member/assets_manage.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-assets-inventory">
-            <h4><strong>19) Inventory</strong></h4>	
-			<p>Staff Member can see and manage all Inventory.</p>
-			<img alt="assets_manage" src="images/staff_member/inventory_manage.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-message">
-            <h4><strong>20)Message</strong></h4>	
-			<p>Staff Member can see their inbox, sent items and compose message.</p>
-			<img alt="message" src="images/staff_member/message.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-profile">
-            <h4><strong>21)Profile</strong></h4>	
-			<p>Staff Member can see their own profile.</p>
-			<img alt="profile" src="images/staff_member/profile.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-faq">
-            <h4><strong>22)FAQ</strong></h4>	
-			<p>Staff Member can see all faq.</p>
-			<img alt="faq" src="images/staff_member/faq.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-society-rules">
-            <h4><strong>23)Society Rules</strong></h4>	
-			<p>Staff Member can see all society rules.</p>
-			<img alt="society_rules" src="images/staff_member/society_rules.png"><br>							
-            <hr>
-		</section>
-		<section id="staff-faq">
-            <h4><strong>24)Gallery</strong></h4>	
-			<p>Staff Member can see photo gallery.</p>
-			<img alt="gallery" src="images/staff_member/gallery.png"><br>							
-            <hr>
-		</section>
-	</section>
-		
-	<section id="member-member-view">
-		<h3><strong>I) Member View</strong></h3>
-		<section id="member-dashboard">
-            <h4><strong>1) Dashboard :</strong></h4>	
-			<p>Member's dashboard.</p>
-			<img alt="dashboard" src="images/member/dashboard.png"><br>							
-            <hr>
-		</section>
-		<section id="member-resident_unit">
-            <h4><strong>2) Resident Unit:</strong></h4>	
-			<p>Member can only view all units and units member.</p>
-			<img alt="residential_unit_list" src="images/member/residential_unit_list.png"><br>							
-            <hr>
-		</section>
+								</ol>
+								<hr>
+							</section>
 
-		<section id="member-member_list">
-            <h4><strong>3) Member</strong></h4>	
-			<p>Member can view all members.</p>
-			<img alt="member_list" src="images/member/member_list.png"><br>							
-            <hr>
-		</section>
+							<section id="access_right_manage">
+								<h4><strong>20) Access Right :</strong></h4>
+								<p>Here you can give access right to every user by role.</p>
+								<img alt="access_right" src="images/screenshot/member_access_right.png"><br><br>
+								<img alt="access_right" src="images/screenshot/Staff_access_right.png"><br><br>
+								<img alt="access_right" src="images/screenshot/accountant_access_right.png"><br><br>
+								<img alt="access_right" src="images/screenshot/gatekeeper_access_right.png"><br><br>
+								<img alt="access_right" src="images/screenshot/management_accessrights.png"><br><br>
 
-		<section id="Staff-member_list">
-            <h4><strong>4) Staff Member</strong></h4>	
-			<p>Member can view all Staff Member.</p>
-			<img alt="member_list" src="images/member/Staff_member_list.png"><br>							
-            <hr>
-		</section>
+								<hr>
+							</section>
 
-		<section id="Accountant_list">
-            <h4><strong>5) Accountant</strong></h4>	
-			<p>Member can view all Accountant.</p>
-			<img alt="Accountant_list" src="images/member/accountant_list.png"><br>							
-            <hr>
-		</section>
+							<section id="assets_inventory_manage">
+								<h4><strong>21) Mail Templates :</strong></h4>
+								<p>From this module you can set notification mail templates. You can also enable or
+									disable this notification mail from general settings.</p>
+								<img alt="document_list" src="images/screenshot/Mail-Templates.png"><br><br>
+								<p> Each template also have shortcodes. So you can use that shortcodes in your mail
+									template. Following Shortcodes are available in mail templates.</p>
+								<ul>
+									<li><strong>{{apartment_name}} :</strong> Display apartment name in mail.</li>
+									<li><strong>{{member_name}} :</strong> Display member name in mail.</li>
+									<li><strong>{{unit_name}} :</strong> Display unit name in mail.</li>
+									<li><strong>{{building_name}} :</strong> Display building name in mail.</li>
+									<li><strong>{{loginlink}} :</strong> Display login link in mail.</li>
+									<li><strong>{{rolename}} :</strong> Display role name in mail.</li>
+									<li><strong>{{username}} :</strong> Display user name in mail.</li>
+									<li><strong>{{password}} :</strong> Display password in mail.</li>
+									<li><strong>{{notice_title}} :</strong> Display notice title name in mail.</li>
+									<li><strong>{{notice_type}} :</strong> Display notice type in mail.</li>
+									<li><strong>{{notice_valid_date}} :</strong> Display notice valid date in mail.</li>
+									<li><strong>{{notice_content}} :</strong> Display notice content in mail.</li>
+									<li><strong>{{event_title}} :</strong> Display event title in mail.</li>
+									<li><strong>{{event_start_date}} :</strong> Display event start date in mail.</li>
+									<li><strong>{{event_end_date}} :</strong> Display event end date in mail.</li>
+									<li><strong>{{event_start_time}} :</strong> Display event start time in mail.</li>
+									<li><strong>{{event_end_time}} :</strong> Display event end time in mail.</li>
+									<li><strong>{{event_description}} :</strong> Display event description in mail.</li>
+									<li><strong>{{nature}} :</strong> Display complaint nature in mail.</li>
+									<li><strong>{{noticetype}} :</strong> Display notice type in mail.</li>
+									<li><strong>{{noticecategory}} :</strong> Display notice category in mail.</li>
+									<li><strong>{{complaintstatus}} :</strong> Display complaint status in mail.</li>
+									<li><strong>{{description}} :</strong> Display complaint description in mail.</li>
+									<li><strong>{{slotname}} :</strong> Display assigned slotname for parking in mail.
+									</li>
+									<li><strong>{{startdate}} :</strong> Display start date of assigned parking sloat in
+										mail.</li>
+									<li><strong>{{enddate}} :</strong> Display end date of assigned parking sloat in
+										mail.</li>
+									<li><strong>{{vehiclenumber}} :</strong> Display vehicle number of assigned parking
+										in mail.</li>
+									<li><strong>{{vehiclemodel}} :</strong> Display vehicle model of assigned parking in
+										mail.</li>
+									<li><strong>{{vehicletype}} :</strong> Display vehicle type of assigned parking in
+										mail.</li>
+									<li><strong>{{RFID}} :</strong> Display RFID of assigned parking in mail.</li>
+									<li><strong>{{facility_name}} :</strong> Display facility name in mail.</li>
+									<li><strong>{{booked_user_name}} :</strong> Display facility booked by user name in
+										mail.</li>
+									<li><strong>{{activity_name}} :</strong> Display activity name of facility booking
+										in mail.</li>
+									<li><strong>{{from_date}} :</strong> Display from date facility booking in mail.
+									</li>
+									<li><strong>{{to_date}} :</strong> Display end date facility booking in mail.</li>
+									<li><strong>{{from_time}} :</strong> Display from time facility booking in mail.
+									</li>
+									<li><strong>{{to_time}} :</strong> Display end time facility booking in mail.</li>
+									<li><strong>{{facility_charge}} :</strong> Display facility charge of facility
+										booking in mail.</li>
+									<li><strong>{{invoiceno}} :</strong> Display invoice no in mail.</li>
+									<li><strong>{{Receiver Name}} :</strong> Display receiver name of message in mail.
+									</li>
+									<li><strong>{{Sender Name}} :</strong> Display sender name of message in mail.</li>
+									<li><strong>{{Message Content}} :</strong> Display message content of message in
+										mail.</li>
+								</ul>
+								<hr>
+							</section>
 
-		<section id="Gatekeeper_list">
-            <h4><strong>6) Gatekeeper</strong></h4>	
-			<p>Member can view all Gatekeeper.</p>
-			<img alt="Gatekeeper_list" src="images/member/gatekeeper_list.png"><br>							
-            <hr>
-		</section>
+							<section id="society_rules">
+								<h4><strong>22) Society Rules :</strong></h4>
+								<p>Here you can see and manage society rules.</p>
+								<img alt="society_rules" src="images/screenshot/society_rules.png"><br>
+								<ol>
+									<h5><strong>
+											<li>Add Society Rules : </li>
+										</strong></h5>
+									<p>Here You can add society rules.</p>
+									<img alt="society_rules_add" src="images/screenshot/society_rules_add.png"><br>
+									<hr>
+							</section>
 
-		<section id="member-committee_member">
-            <h4><strong>7) Committee Member</strong></h4>	
-			<p>Member can see all committee member.</p>
-			<img alt="committee_member" src="images/member/committee_member.png"><br>							
-            <hr>
-		</section>		
-		
-		
-		
-		<section id="member-notice-event">
-            <h4><strong>8) Notice </strong></h4>	
-			<p>Member can see  all notice and events.</p>
-			<img alt="notice_list" src="images/member/notice_list.png"><br>							
-            <hr>
-		</section>
+							<section id="faq-list">
+								<h4><strong>23) FAQ :</strong></h4>
+								<p>Here you can see and manage FAQ.</p>
+								<img alt="faq_list" src="images/screenshot/faq_list.png"><br>
+								<ol>
+									<h5><strong>
+											<li>Add FAQ : </li>
+										</strong></h5>
+									<p>Here You can add faq.</p>
+									<img alt="faq_add" src="images/screenshot/faq_add.png"><br>
+									<hr>
+							</section>
 
-		<section id="member-notice-event">
-            <h4><strong>9) Event</strong></h4>	
-			<p>Member can see all events.</p>
-			<img alt="notice_list" src="images/member/event_list.png"><br>							
-            <hr>
-		</section>
+							<section id="gallery-list">
+								<h4><strong>24) Gallery :</strong></h4>
+								<p>Here you can see and manage Gallery.</p>
+								<img alt="photo_gallery_list" src="images/screenshot/photo_gallery_list.png"><br>
+								<ol>
+									<h5><strong>
+											<li>Add Gallery : </li>
+										</strong></h5>
+									<p>Here You can add new gallery.</p>
+									<img alt="photo_gallery_add_gallery"
+										src="images/screenshot/photo_gallery_add_gallery.png"><br>
+									<hr>
+							</section>
 
+						</section>
 
-		<section id="member-complain">
-            <h4><strong>10) Complain</strong></h4>	
-			<p>Member can see complaints and add their complain.</p>
-			<img alt="complaint_list" src="images/member/complaint_list.png"><br>							
-            <hr>
-		</section>
+						<section id="member-member-view">
+							<h3><strong>I) Member View</strong></h3>
+							<section id="member-dashboard">
+								<h4><strong>1) Dashboard :</strong></h4>
+								<p>Member's dashboard.</p>
+								<img alt="dashboard" src="images/member/dashboard.png"><br>
+								<hr>
+							</section>
+							<section id="member-resident_unit">
+								<h4><strong>2) Resident Unit:</strong></h4>
+								<p>Member can only view all units and units member.</p>
+								<img alt="residential_unit_list" src="images/member/residential_unit_list.png"><br>
+								<h5><strong>
+										<li>View Occupied History:</li>
+									</strong></h5>
+								<p>Member can view occupied units history.</p>
+								<img alt="notice_view" src="images/member/view_occupied.png"><br><br>
+								<hr>
+							</section>
 
-		<section id="member-parking-manager">
-            <h4><strong>13) Parking Manager:</strong></h4>	
-			<ol>
-				<h5><strong><li>Sloat List : </li></strong></h5	>
-				<p>Member can see all view slot .</p>
-				<img alt="parking_slot_list" src="images/member/parking_slot_list.png"><br>
-				
-				<h5><strong><li>Assigned Sloat List :</li></strong></h5> 	
-				<p>Member can see all view their assigned slot.</p>
-				<img alt="parking_assign_slot_list" src="images/member/assign_slot_list.png"><br><br>
-			</ol>	
-            <hr>
-        </section>
+							<section id="member-member_list">
+								<h4><strong>3) Member</strong></h4>
+								<p>Member can view all members.</p>
+								<img alt="member_list" src="images/member/member_list.png"><br>
+								<h5><strong>
+										<li>View Member:</li>
+									</strong></h5>
+								<p>Member can view member information.</p>
+								<img alt="notice_view" src="images/member/view_member.png"><br>
+								<h5><strong>
+									<li>View Tenant:</li>
+								</strong></h5>
+								<p>Member can add and view tenant information.</p>
+								<img alt="notice_view" src="images/member/Tenant.png"><br>
+								<h5><strong>
+										<li>View Family Member:</li>
+									</strong></h5>
+								<p>Member can add and view family member information.</p>
+								<img alt="notice_view" src="images/member/family_member_tab.png"><br><br>
+								<hr>
+							</section>
+
+							<section id="Staff-member_list">
+								<h4><strong>4) Staff Member</strong></h4>
+								<p>Member can view all Staff Member.</p>
+								<img alt="member_list" src="images/member/Staff_member_list.png"><br>
+
+								<h5><strong>
+										<li>View Staff Member:</li>
+									</strong></h5>
+								<p>Member can view staff member information.</p>
+								<img alt="notice_view" src="images/member/view_staff_member.png"><br><br>
+
+								<hr>
+							</section>
+
+							<section id="Accountant_list">
+								<h4><strong>5) Accountant</strong></h4>
+								<p>Member can view all Accountant.</p>
+								<img alt="Accountant_list" src="images/member/accountant_list.png"><br>
+
+								<h5><strong>
+										<li>View Accountant:</li>
+									</strong></h5>
+								<p>Member can view accountant information.</p>
+								<img alt="notice_view" src="images/member/view_accountant.png"><br><br>
+								<hr>
+							</section>
+
+							<section id="Gatekeeper_list">
+								<h4><strong>6) Gatekeeper</strong></h4>
+								<p>Member can view all Gatekeeper.</p>
+								<img alt="Gatekeeper_list" src="images/member/gatekeeper_list.png"><br>
+
+								<h5><strong>
+										<li>View Gatekeeper:</li>
+									</strong></h5>
+								<p>Member can view gatekeeper information.</p>
+								<img alt="notice_view" src="images/member/view_gatekeeper.png"><br><br>
+								<hr>
+							</section>
+
+							<section id="member-committee_member">
+								<h4><strong>7) Committee Member</strong></h4>
+								<p>Member can see all committee member.</p>
+								<img alt="committee_member" src="images/member/committee_member.png"><br>
+								<hr>
+							</section>
+
+							<section id="member-document">
+								<h4><strong>8) Document</strong></h4>
+								<p>Member can see their units documents.</p>
+								<img alt="document_list" src="images/member/document_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="member-complain">
+								<h4><strong>9) Complaints</strong></h4>
+								<p>Member can see complaints and add their complain.</p>
+								<img alt="complaint_list" src="images/member/complaint_list.png"><br>
+								<h4><strong>View Complaints</strong></h4>
+								<p>Member can view complaints details.</p>
+								<img alt="complaint_list" src="images/member/view_complaint.png"><br>
+								<hr>
+							</section>
+
+							<section id="member-parking-manager">
+								<h4><strong>10) Parking Manager:</strong></h4>
+								<ol>
+									<h5><strong>
+											<li>Sloat List : </li>
+										</strong></h5>
+									<p>Member can see all view slot .</p>
+									<img alt="parking_slot_list" src="images/member/parking_slot_list.png"><br>
+									<h4><strong>
+											<li>View Sloat :
+										</strong></li></strong></h4>
+									<p>Member can view parking sloat details.</p>
+									<img alt="complaint_list" src="images/member/view_parking_slot.png"><br>
+
+									<h5><strong>
+											<li>Assigned Sloat List :</li>
+										</strong></h5>
+									<p>Member can see all view their assigned slot.</p>
+									<img alt="parking_assign_slot_list"
+										src="images/member/assign_slot_list.png"><br><br>
+
+									<h4><strong>
+											<li>View Assigned Sloat :
+										</strong></li></strong></h4>
+									<p>Member can view Assigned Sloat details.</p>
+									<img alt="complaint_list" src="images/member/view_assign_slot.png"><br>
+								</ol>
+								<hr>
+							</section>
+
+							<section id="member-notice-event">
+								<h4><strong>11) Visitor Management </strong></h4>
+								<h5 id="visitor_manage11"><strong>
+										<li>Visitor Request List:</li>
+									</strong></h5>
+								<p>Here member can view all visitor Check In list and also checkout .</p>
+								<img alt="Manage Gates" src="images/member/visitor_cheklist.png"><br><br>
+
+								<h5><strong>
+										<li>View Visitor Request:</li>
+									</strong></h5>
+								<p>In Visitor Request list click on view button you can view Visitor Request.</p>
+								<img alt="notice_view" src="images/member/Visitor_Request_view.png"><br><br>
+
+								<h5><strong>
+										<li>Visitor Check In :</li>
+									</strong></h5>
+								<p>member can add visitor Check In entry.</p>
+								<img alt="Manage Gates" src="images/member/visitor_checkin_form.png"><br><br>
+
+							</section>
 
 
-		
-		<section id="member-services">
-            <h4><strong>14) Services</strong></h4>	
-			<p>Member can see all services.</p>
-			<img alt="service" src="images/member/service.png"><br>							
-            <hr>
-		</section>
-		<section id="member-facility">
-            <h4><strong>15) Facility</strong></h4>	
-			<p>Member can see  all facility list.</p>
-			<img alt="facility" src="images/member/facility.png"><br>							
-            <hr>
-		</section>
-		<section id="Booking-facility">
-            <h4><strong>16) Booking Facility</strong></h4>	
-			<p>Member can see  all  view 	 booking facility list.</p>
-			<img alt="facility" src="images/member/booking_facility.png"><br>							
-            <hr>
-		</section>
+							<section id="member-notice-event">
+								<h4><strong>12) Notice </strong></h4>
+								<p>Member can see all notice and events.</p>
+								<img alt="notice_list" src="images/member/notice_list.png"><br>
+
+								<h5><strong>
+										<li>View Notice :</li>
+									</strong></h5>
+								<p>member can View notice Details.</p>
+								<img alt="Manage Gates" src="images/member/view_notice.png"><br><br>
+								<hr>
+							</section>
+
+							<section id="member-notice-event">
+								<h4><strong>13) Event</strong></h4>
+								<p>Member can see all events.</p>
+								<img alt="notice_list" src="images/member/event_list.png"><br>
+								<h5><strong>
+										<li>View Event :</li>
+									</strong></h5>
+								<p>member can View event Details.</p>
+								<img alt="Manage Gates" src="images/member/view_event.png"><br><br>
+								<hr>
+							</section>
+
+							<section id="member-message">
+								<h4><strong>14)Message</strong></h4>
+								<p>Member can see their inbox,sent item and compose message.</p>
+								<img alt="message" src="images/member/message.png"><br> <br>
+
+								<p>Member can sent item and compose message.</p>
+								<img alt="message" src="images/member/sent_message.png"><br> <br>
+
+								<p>Member can see their inbox message.</p>
+								<img alt="message" src="images/member/view_message.png"><br>
+								<hr>
+							</section>
+
+							<section id="member-services">
+								<h4><strong>15) Services</strong></h4>
+								<p>Member can see all services.</p>
+								<img alt="service" src="images/member/service.png"><br>
+								<h5><strong>
+										<li>View services :</li>
+									</strong></h5>
+								<p>member can View services Details.</p>
+								<img alt="Manage Gates" src="images/member/view_services.png"><br><br>
+								<hr>
+							</section>
+							<section id="member-facility">
+								<h4><strong>16) Facility</strong></h4>
+								<p>Member can see all facility list.</p>
+								<img alt="facility" src="images/member/facility.png"><br>
+
+								<h5><strong>
+										<li>View Facility :</li>
+									</strong></h5>
+								<p>member can View facility Details.</p>
+								<img alt="Manage Gates" src="images/member/view_facility.png"><br><br>
+								<hr>
+							</section>
+							<section id="Booking-facility">
+								<h4><strong>17) Booking Facility</strong></h4>
+								<p>Member can see all view booking facility list.</p>
+								<img alt="facility" src="images/member/booking_facility.png"><br><br>
+
+								<h4><strong>1. Add Booking Facility</strong></h4>
+								<p>Member can Book facility in Booking Facility.</p>
+								<img alt="facility" src="images/member/add_booking_facility.png"><br>
+
+								<h5><strong>
+										<li>View Book Facility :</li>
+									</strong></h5>
+								<p>member can View book facility Details.</p>
+								<img alt="Manage Gates" src="images/member/view_book_facility.png"><br><br>
+
+								<hr>
+							</section>
+
+							<section id="member-accountant">
+								<h4><strong>18) Accounts</strong></h4>
+								<p>Member can see their payment invoice.</p>
+								<img alt="accountantant_paymentlist" src="images/member/new/view_invoice.png"><br>
+								<p></p>
+								<ul>
+									<li><strong>View Invoice :</strong> Here member can view invoice.</li> <br>
+									<img alt="view_invoice" src="images/member/new/view _invoice.png"><br> <br>
+									<li><strong>Pay :</strong> Here member can pay own payment using paypal.</li> <br>
+									<img alt="view_invoice" src="images/member/new/add_income.png"><br>
+								</ul>
+								<hr>
+							</section>
+
+							<section id="member-assets-inventory">
+								<h4><strong>19) Assets</strong></h4>
+								<p>Member can see all assets.</p>
+								<img alt="assets_manage" src="images/member/assets_manage.png"><br>
+								<hr>
+							</section>
+							<section id="member-assets-inventory">
+								<h4><strong>20) Inventory</strong></h4>
+								<p>Member can see all inventory.</p>
+								<img alt="assets_manage" src="images/member/inventory_manage.png"><br>
+								<hr>
+							</section>
+
+							<section id="member-reports">
+								<h4><strong>21) Report</strong></h4>
+
+								<ol>
+									<h5><strong>
+											<li>Units By Building : </li>
+										</strong></h5>
+									<p>Here You can see report units by building.</p>
+									<img alt="report_unit_by_building"
+										src="images/member/report_unit_by_building.png"><br>
+									<h5><strong>
+											<li>Members By Building :</li>
+										</strong></h5>
+									<p>1.Graph : Here you can see number of members by building Graph report.</p>
+									<img alt="report_member_by_builging"
+										src="images/member/report_member_by_builging.png"><br><br>
+
+									<p>2.Datatable : Here you can see number of members by building Data by Datatable.
+									</p>
+									<img alt="report_member_by_builging"
+										src="images/member/report_member_by_building_datatable.png"><br><br>
+
+									<!-- <h5><strong><li>Payment :</li></strong></h5	> 
+				<p>Here you can see payment report by month.</p>
+				<img alt="report_payment" src="images/member/report_payment.png"><br><br> -->
+
+									<h4><strong>
+											<li>Income-Expense Report </li>
+										</strong></h4>
+									<h5><strong>Income Report :</strong></h5>
+									<p>1.Graph: Here you can see income graph report.</p>
+									<img alt="report_payment" src="images/member/report_income.png"><br><br>
+									<p>2.Datatable: Here you can see income data by datatable.</p>
+									<img alt="report_payment" src="images/member/report_income_data.png"><br><br>
+									<h5><strong>Expense Report :</strong></h5>
+									<p>Here you can see Expense graph report.</p>
+									<img alt="report_expense" src="images/member/report_expense.png"><br><br>
+									<p>Here you can see Expense data by datatable.</p>
+									<img alt="report_expense" src="images/member/report_expense_data.png"><br><br>
+
+									<h5><strong>Income & Expense Report :</strong></h5>
+									<p>Here you can see Income & Expense graph report.</p>
+									<img alt="report_expense" src="images/member/report_income_expense.png"><br><br>
+									<p>Here you can see Income & Expense data by datatable.</p>
+									<img alt="report_expense" src="images/member/report_net_profit.png"><br><br>
+
+									<h5><strong>
+											<li>Complaint :</li>
+										</strong></h5>
+									<h5><strong>Complain Status :</strong></h5>
+									<p>Here you can see report complain by status.</p>
+									<img alt="report_complaint_status"
+										src="images/member/report_complaint_status.png"><br><br>
+
+									<h5><strong>Maintenance Status :</strong></h5>
+									<p>Here you can see report maintenance by status.</p>
+									<img alt="report_complaint_status"
+										src="images/member/report_maintainance.png"><br><br>
+
+									<h5><strong>Request Status :</strong></h5>
+									<p>Here you can see report request by status.</p>
+									<img alt="report_complaint_status" src="images/member/report_request.png"><br><br>
+
+									<h5><strong>Suggestion Status :</strong></h5>
+									<p>Here you can see report suggestion by status.</p>
+									<img alt="report_complaint_status" src="images/member/report_suggetion.png"><br><br>
+
+								</ol>
+								<hr>
+							</section>
+
+							<section id="member-profile">
+								<h4><strong>22)Profile</strong></h4>
+								<p>Member can see their own profile.</p>
+								<img alt="profile" src="images/member/profile.png"><br>
+								<hr>
+							</section>
+							<section id="member-faq">
+								<h4><strong>23)FAQ</strong></h4>
+								<p>Staff Member can see all faq.</p>
+								<img alt="faq" src="images/member/faq.png"><br>
+								<hr>
+							</section>
+							<section id="member-society-rules">
+								<h4><strong>24)Society Rules</strong></h4>
+								<p>Staff Member can see all society rules.</p>
+								<img alt="society_rules" src="images/member/society_rules.png"><br>
+								<hr>
+							</section>
+							<section id="member-faq">
+								<h4><strong>25)Gallery</strong></h4>
+								<p>Staff Member can see photo gallery.</p>
+								<img alt="gallery" src="images/member/gallery.png"><br>
+								<hr>
+							</section>
+
+						</section>
+
+						<section id="staff-member-view">
+							<h3><strong>H) Staff Member View</strong></h3>
+							<section id="staff-dashboard">
+								<h4><strong>1) Dashboard :</strong></h4>
+								<p>Staff Member's dashboard.</p>
+								<img alt="dashboard" src="images/staff_member/dashboard.png"><br>
+								<hr>
+							</section>
+							<section id="staff-resident_unit">
+								<h4><strong>2) Resident Unit:</strong></h4>
+								<p>Staff Member can view and manage all units.</p>
+								<img alt="resident_unit" src="images/staff_member/resident_unit.png"><br>
+								<hr>
+							</section>
+							<section id="staff-member_list">
+								<h4><strong>3) Member:</strong></h4>
+								<p>Staff Member can see and manage all member.</p>
+								<img alt="member_list" src="images/staff_member/member_list.png"><br>
+								<hr>
+							</section>
+							<section id="staff-member_list">
+								<h4><strong>4) Staff Member:</strong></h4>
+								<p>Staff Member can see and manage all Staff Member.</p>
+								<img alt="member_list" src="images/staff_member/staff_member_list.png"><br>
+								<hr>
+							</section>
+							<section id="staff-member_list">
+								<h4><strong>5) Accountant:</strong></h4>
+								<p>Staff Member can see and manage all Accountant.</p>
+								<img alt="member_list" src="images/staff_member/accountant_list.png"><br>
+								<hr>
+							</section>
+							<section id="staff-member_list">
+								<h4><strong>6) Gatekeeper:</strong></h4>
+								<p>Staff Member can see and manage all Gatekeeper.</p>
+								<img alt="member_list" src="images/staff_member/gatekeeper_list.png"><br>
+								<hr>
+							</section>
+							<section id="staff-committee_member">
+								<h4><strong>7) Committee Member</strong></h4>
+								<p>Staff Member can see all committee member.</p>
+								<img alt="committee_member" src="images/staff_member/committee_member.png"><br>
+								<hr>
+							</section>
+
+							<section id="staff-document">
+								<h4><strong>8) Document</strong></h4>
+								<p>Staff Member can see and manage all documents.</p>
+								<img alt="document" src="images/staff_member/document.png"><br>
+								<hr>
+							</section>
+
+							<section id="staff-complain">
+								<h4><strong>9) Complain</strong></h4>
+								<p>Staff Member can see and manage all complaints.</p>
+								<img alt="complain" src="images/staff_member/complaint.png"><br>
+								<hr>
+							</section>
+							<section id="notice_event">
+								<h4><strong>10) Parking Manager:</strong></h4>
+								<ol>
+									<h5><strong>
+											<li>Sloat List : </li>
+										</strong></h5>
+									<p>Here You can see and manage all sloat.</p>
+									<img alt="parking_slot_list" src="images/staff_member/parking_slot_list.png"><br>
+									<h5><strong>
+											<li>Add Sloat:</li>
+										</strong></h5>
+									<p>Here You can add new sloat.</p>
+									<img alt="parking_add_slot_list" src="images/staff_member/add_slot.png"><br><br>
+									<h5><strong>
+											<li>Edit Sloat:</li>
+										</strong></h5>
+									<p>Here You can edit sloat.</p>
+									<img alt="parking_edit_slot_list" src="images/staff_member/edit_slot.png"><br><br>
+									<h5><strong>
+											<li>Assigned Sloat List :</li>
+										</strong></h5>
+									<p>Here You can see and manage all assigned sloat list.</p>
+									<img alt="parking_assign_slot_list"
+										src="images/staff_member/assign_slot_list.png"><br><br>
+									<h5><strong>
+											<li>Add Assigned Sloat:</li>
+										</strong></h5>
+									<p>Here You can assign sloat.</p>
+									<img alt="parking_assign_slot" src="images/staff_member/assign_slot.png"><br><br>
+									<h5><strong>
+											<li>Edit Assigned Sloat:</li>
+										</strong></h5>
+									<p>Here You can edit assign sloat.</p>
+									<img alt="parking_assign_slot"
+										src="images/staff_member/assign_slot_edit.png"><br><br>
+
+								</ol>
+								<hr>
+							</section>
+							<section id="staff-visitor-manage">
+								<h4><strong>11) Visitor Management</strong></h4>
+								<p>Staff Member can see all visitor check-in list .</p>
+								<img alt="visitor_management" src="images/staff_member/visitor_management.png"><br>
+								<hr>
+							</section>
+							<section id="staff-visitor-manage">
+								<h4><strong>12) Staff Checkin</strong></h4>
+								<p>Staff Member can see all staff check-in list.</p>
+								<img alt="visitor_management" src="images/staff_member/staff_check-in.png"><br> <br>
+								<p>Staff Member can staff check-out.</p>
+								<img alt="visitor_management" src="images/staff_member/staff_checkout.png"><br>
+								<hr>
+							</section>
+							<section id="staff-notice-event">
+								<h4><strong>13) Notice</strong></h4>
+								<p>Staff Member can see and manage all notice.</p>
+								<img alt="notice_event" src="images/staff_member/notice_list.png"><br>
+								<hr>
+							</section>
+							<section id="staff-notice-event">
+								<h4><strong>14) Event</strong></h4>
+								<p>Staff Member can see and manage all event.</p>
+								<img alt="notice_event" src="images/staff_member/event_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="staff-message">
+								<h4><strong>15)Message</strong></h4>
+								<p>Staff Member can see their inbox, sent items and compose message.</p>
+								<img alt="message" src="images/staff_member/message.png"><br>
+								<hr>
+							</section>
+
+							<section id="staff-services">
+								<h4><strong>16) Services</strong></h4>
+								<p>Staff Member can see and manage all services.</p>
+								<img alt="service" src="images/staff_member/service.png"><br>
+								<hr>
+							</section>
+							<section id="staff-facility">
+								<h4><strong>17) Facility</strong></h4>
+								<p>Staff Member can see and manage all facility.</p>
+								<img alt="facility" src="images/staff_member/facility.png"><br>
+								<hr>
+							</section>
+							<section id="Booking-facility">
+								<h4><strong>18) Booking Facility</strong></h4>
+								<p>Staff Member can see and manage all Booking Facility.</p>
+								<img alt="facility" src="images/staff_member/booking_facility.png"><br>
+								<hr>
+							</section>
+
+							<section id="Booking-facility">
+								<h4><strong>19) Accounts</strong></h4>
+								<h5><strong>
+										<li>Invoice List : </li>
+									</strong></h5>
+								<p>Staff Member can manage all invoice,generate invoice,add payment,add charges and add
+									expenses. For more information <a href="#account_manage">click here</a>.</p>
+								<img alt="accountant_invoice_list" src="images/accountant/new/invoice.png"><br>
+								<h5><strong>
+										<li>Charges List:</li>
+									</strong></h5>
+								<p>Here you see can manage charges list.</p>
+								<img alt="invoice_charges_list" src="images/accountant/charge_list.png"><br><br>
+								<h5><strong>
+										<li>ExpenseList:</li>
+									</strong></h5>
+								<p>Here you see can manage Expenselist.</p>
+								<img alt="invoice_expence_list" src="images/accountant/expanse_list.png"><br><br>
+							</section>
+							<section id="staff-assets-inventory">
+								<h4><strong>20) Assets</strong></h4>
+								<p>Staff Member can see and manage all assets.</p>
+								<img alt="assets_manage" src="images/staff_member/assets_manage.png"><br>
+								<hr>
+							</section>
+							<section id="staff-assets-inventory">
+								<h4><strong>21) Inventory</strong></h4>
+								<p>Staff Member can see and manage all Inventory.</p>
+								<img alt="assets_manage" src="images/staff_member/inventory_manage.png"><br>
+								<hr>
+							</section>
+
+							<section id="staff-assets-inventory">
+								<h4><strong>22) Report</strong></h4>
+								<p>Staff Member can see and all reports.<a href="#member-reports">click here</a> for see
+									all reports.</p> <br>
+								<hr>
+							</section>
+
+
+							<section id="staff-profile">
+								<h4><strong>23)Profile</strong></h4>
+								<p>Staff Member can see their own profile.</p>
+								<img alt="profile" src="images/staff_member/profile.png"><br>
+								<hr>
+							</section>
+							<section id="staff-faq">
+								<h4><strong>24)FAQ</strong></h4>
+								<p>Staff Member can see all faq.</p>
+								<img alt="faq" src="images/staff_member/faq.png"><br>
+								<hr>
+							</section>
+							<section id="staff-society-rules">
+								<h4><strong>25)Society Rules</strong></h4>
+								<p>Staff Member can see all society rules.</p>
+								<img alt="society_rules" src="images/staff_member/society_rules.png"><br>
+								<hr>
+							</section>
+							<section id="staff-faq">
+								<h4><strong>26)Gallery</strong></h4>
+								<p>Staff Member can see photo gallery.</p>
+								<img alt="gallery" src="images/staff_member/gallery.png"><br>
+								<hr>
+							</section>
+						</section>
+
+
+						<section id="accountant-view">
+							<h3><strong>J) Accountant View</strong></h3>
+							<section id="accountant-dashboard">
+								<h4><strong>1) Dashboard </strong></h4>
+								<p>Accountant's dashboard.</p>
+								<img alt="dashboard" src="images/accountant/dashboard.png"><br>
+								<hr>
+							</section>
+							<section id="accountant-resident_unit">
+								<h4><strong>2) Resident Unit</strong></h4>
+								<p>Accountant can only view all units and units member.</p>
+								<img alt="resident_unit" src="images/accountant/resident_unit.png"><br>
+								<hr>
+							</section>
+
+							<section id="member-member_list">
+								<h4><strong>3) Member</strong></h4>
+								<p>Accountant can view all members.</p>
+								<img alt="member_list" src="images/accountant/member_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="Staff-member_list">
+								<h4><strong>4) Staff Member</strong></h4>
+								<p>Accountant can view all Staff Member.</p>
+								<img alt="member_list" src="images/accountant/Staff_member_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="Accountant_list">
+								<h4><strong>5) Accountant</strong></h4>
+								<p>Accountant can view all Accountant.</p>
+								<img alt="Accountant_list" src="images/accountant/accountant_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="Gatekeeper_list">
+								<h4><strong>6) Gatekeeper</strong></h4>
+								<p>Accountant can view all Gatekeeper.</p>
+								<img alt="Gatekeeper_list" src="images/accountant/gatekeeper_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="member-committee_member">
+								<h4><strong>7) Committee Member</strong></h4>
+								<p>Accountant can see all committee member.</p>
+								<img alt="committee_member" src="images/accountant/committee_member.png"><br>
+								<hr>
+							</section>
+
+							<section id="accountant-complain">
+								<h4><strong>8) Complain</strong></h4>
+								<p>Accountant can see complaints and add their complain.</p>
+								<img alt="complaint_list" src="images/accountant/complaint_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="accountant-notice-event">
+								<h4><strong>9) Notice </strong></h4>
+								<p>Accountant can see all notice.</p>
+								<img alt="notice_list" src="images/accountant/notice_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="accountant-notice-event">
+								<h4><strong>10) Event</strong></h4>
+								<p>Accountant can see all events.</p>
+								<img alt="notice_list" src="images/accountant/event_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="accountant-message">
+								<h4><strong>11)Message</strong></h4>
+								<p>Accountant can see their inbox,sent item and compose message.</p>
+								<img alt="message" src="images/accountant/message.png"><br>
+								<hr>
+							</section>
+
+							<section id="account_manage">
+								<h4><strong>12) Accounts</strong></h4>
+
+								<ol>
+									<h5><strong>
+											<li>Invoice List : </li>
+										</strong></h5>
+									<p>Accountant can manage all invoice,generate invoice,add payment,add charges and
+										add expenses. For more information <a href="#account_manage">click here</a>.</p>
+									<img alt="accountant_invoice_list" src="images/accountant/new/invoice.png"><br>
+									<h5><strong>
+											<li>Charges List:</li>
+										</strong></h5>
+									<p>Here you see can manage charges list.</p>
+									<img alt="invoice_charges_list" src="images/accountant/charge_list.png"><br><br>
+									<h5><strong>
+											<li>Add Charges:</li>
+										</strong></h5>
+									<p>Here you can add member charges and if you want to create invoice for Tenant, you have to enable 'Want To Create Invoice For Tenant?' option in General Settings.</p>
+									<img alt="invoice_add_charges" src="images/accountant/add_charge.png"><br><br>
+									<h5><strong>
+											<li>Edit Charges:</li>
+										</strong></h5>
+									<p>Here you can edit member charges.</p>
+									<img alt="invoice_edit_charges" src="images/accountant/edit_charge.png"><br><br>
+									<h5><strong>
+											<li>ExpenseList:</li>
+										</strong></h5>
+									<p>Here you see can manage Expenselist.</p>
+									<img alt="invoice_expence_list" src="images/accountant/expanse_list.png"><br><br>
+									<h5><strong>
+											<li>Add Expence:</li>
+										</strong></h5>
+									<p>Here you add Expenseentry.</p>
+									<img alt="invoice_add_expence" src="images/accountant/add_expanse.png"><br><br>
+									<h5><strong>
+											<li>Edit Expence:</li>
+										</strong></h5>
+									<p>Here you edit Expense entry.</p>
+									<img alt="invoice_edit_expence" src="images/accountant/edit_expanse.png"><br><br>
+								</ol>
+								<hr>
+							</section>
+
+							<section id="accountant-parking-manager">
+								<h4><strong>13) Assest & Inventory</strong></h4>
+								<ol>
+									<h5><strong>
+											<li>Assest List : </li>
+										</strong></h5>
+									<p>Accountant can see all Assest list .</p>
+									<img alt="parking_slot_list" src="images/accountant/slot_list.png"><br>
+
+									<h5><strong>
+											<li>Inventory List :</li>
+										</strong></h5>
+									<p>Accountant can see all Inventory list.</p>
+									<img alt="parking_assign_slot_list"
+										src="images/accountant/assign_slot_list.png"><br><br>
+								</ol>
+								<hr>
+							</section>
 
 
 
-		<section id="member-accountant">
-            <h4><strong>17) Accounts</strong></h4>	
-			<p>Member can see  their payment invoice.</p>
-			<img alt="accountantant_paymentlist" src="images/member/new/view_invoice.png"><br>			
-				<p></p>
-				<ul>
-					<li><strong>View Invoice :</strong> Here member can view invoice.</li> <br>
-					<img alt="view_invoice" src="images/member/new/view _invoice.png"><br>	<br>
-					<li><strong>Pay :</strong> Here member can pay own payment using paypal.</li> <br>
-					<img alt="view_invoice" src="images/member/new/add_income.png"><br>
-				</ul>				
-            <hr>
-		</section>
-		<section id="member-document">
-            <h4><strong>18) Document</strong></h4>	
-			<p>Member can see their units documents.</p>
-			<img alt="document_list" src="images/member/document_list.png"><br>	
-            <hr>
-		</section>
+							<section id="accountant-profile">
+								<h4><strong>14)Profile</strong></h4>
+								<p>Accountant can see their own profile.</p>
+								<img alt="profile" src="images/accountant/profile.png"><br>
+								<hr>
+							</section>
+							<section id="accountant-faq">
+								<h4><strong>15)FAQ</strong></h4>
+								<p>Accountant can see all faq.</p>
+								<img alt="faq" src="images/accountant/faq.png"><br>
+								<hr>
+							</section>
+							<section id="accountant-society-rules">
+								<h4><strong>16)Society Rules</strong></h4>
+								<p>Accountant can see all society rules.</p>
+								<img alt="society_rules" src="images/accountant/society_rules.png"><br>
+								<hr>
+							</section>
+							<section id="accountant-faq">
+								<h4><strong>17)Gallery</strong></h4>
+								<p>Accountant can see photo gallery.</p>
+								<img alt="gallery" src="images/accountant/gallery.png"><br>
+								<hr>
+							</section>
+
+						</section>
+
+						<section id="gatekeeper-view">
+							<h3><strong>K) Gatekeeper View:</strong></h3>
+							<section id="gatekeeper-dashboard">
+								<h4><strong>1) Dashboard :</strong></h4>
+								<p>Gatekeeper's dashboard.</p>
+								<img alt="dashboard" src="images/gatekeeper/dashboard.png"><br>
+								<hr>
+							</section>
+
+							<section id="accountant-resident_unit">
+								<h4><strong>2) Resident Unit: </strong></h4>
+								<p>Gatekeeper can only view all units and units member.</p>
+								<img alt="resident_unit" src="images/gatekeeper/resident_unit.png"><br>
+								<hr>
+							</section>
+
+							<section id="accountant-member_list">
+								<h4><strong>3) Member</strong></h4>
+								<p>Gatekeeper can view all members.</p>
+								<img alt="member_list" src="images/gatekeeper/member_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="accountant-member_list">
+								<h4><strong>4) Staff Member</strong></h4>
+								<p>Gatekeeper can view all Staff Member.</p>
+								<img alt="member_list" src="images/gatekeeper/Staff_member_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="accountant-member_list">
+								<h4><strong>5) Accountant</strong></h4>
+								<p>Gatekeeper can view all Accountant.</p>
+								<img alt="Accountant_list" src="images/gatekeeper/accountant_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="accountant-member_list">
+								<h4><strong>6) Gatekeeper</strong></h4>
+								<p>Gatekeeper can view all Gatekeeper.</p>
+								<img alt="Gatekeeper_list" src="images/gatekeeper/gatekeeper_list.png"><br>
+								<hr>
+							</section>
+
+							<section id="accountant-member_list">
+								<h4><strong>7) Committee Member</strong></h4>
+								<p>Gatekeeper can view all committee member.</p>
+								<img alt="committee_member" src="images/gatekeeper/committee_member.png"><br>
+								<hr>
+							</section>
 
 
+							<section id="accountant-parking-manager">
+								<h4><strong>8) Parking Manager</strong></h4>
+								<p>Gatekeeper can manage all parking management module.For more information<a
+										href="#parkingmanage">Click here</a>..</p>
+								<img alt="parking_management" src="images/gatekeeper/parking_management.png"><br>
+								<hr>
+							</section>
 
-		<section id="member-assets-inventory">
-            <h4><strong>19) Assets</strong></h4>	
-			<p>Member can see  all assets.</p>
-			<img alt="assets_manage" src="images/member/assets_manage.png"><br>							
-            <hr>
-		</section>
-		<section id="member-assets-inventory">
-            <h4><strong>20) Inventory</strong></h4>	
-			<p>Member can see  all  inventory.</p>
-			<img alt="assets_manage" src="images/member/inventory_manage.png"><br>							
-            <hr>
-		</section>
+							<section id="accountant-parking-manager">
+								<h4><strong>9) Visitor Management</strong></h4>
+								<p>Gatekeeper can manage all visitor management module.For more information<a
+										href="#visitor_manage11">Click here</a></p>
+								<img alt="visitor_management" src="images/gatekeeper/visitor_management.png"><br>
+								<hr>
 
+								<h4><strong>
+										<li> Print Visitor Request Details :</li>
+									</strong></h5>
+									<p>Gatekeeper can Print Approved Visitor Request Details .</p>
+									<img alt="Manage Gates" src="images/screenshot/view_request-details.png"><br><br>
+							</section>
 
+						</section>
+						<section id="management_user">
+							<h3><strong>L)Management:</strong></h3>
+							<ol>
+								<section id="login-page-setting">
 
-		<section id="member-message">
-            <h4><strong>21)Message</strong></h4>	
-			<p>Member can see their inbox,sent item and compose message.</p>
-			<img alt="message" src="images/member/message.png"><br>							
-            <hr>
-		</section>
-		<section id="member-profile">
-            <h4><strong>22)Profile</strong></h4>	
-			<p>Member can see their own profile.</p>
-			<img alt="profile" src="images/member/profile.png"><br>							
-            <hr>
-		</section>
-		<section id="member-faq">
-            <h4><strong>23)FAQ</strong></h4>	
-			<p>Staff Member can see all faq.</p>
-			<img alt="faq" src="images/member/faq.png"><br>							
-            <hr>
-		</section>
-		<section id="member-society-rules">
-            <h4><strong>24)Society Rules</strong></h4>	
-			<p>Staff Member can see all society rules.</p>
-			<img alt="society_rules" src="images/member/society_rules.png"><br>							
-            <hr>
-		</section>
-		<section id="member-faq">
-            <h4><strong>25)Gallery</strong></h4>	
-			<p>Staff Member can see photo gallery.</p>
-			<img alt="gallery" src="images/member/gallery.png"><br>							
-            <hr>
-		</section>
-			
-        </section>
-		
-		<section id="accountant-view">
-		<h3><strong>J) Accountant View</strong></h3>
-		<section id="accountant-dashboard">
-            <h4><strong>1) Dashboard </strong></h4>	
-			<p>Accountant's dashboard.</p>
-			<img alt="dashboard" src="images/accountant/dashboard.png"><br>							
-            <hr>
-		</section>
-		<section id="accountant-resident_unit">
-            <h4><strong>2) Resident Unit</strong></h4>	
-			<p>Accountant can only view all units and units member.</p>
-			<img alt="resident_unit" src="images/accountant/resident_unit.png"><br>							
-            <hr>
-		</section>
+									<h5><strong>
+											<li>Create management user:</li>
+										</strong></h5>
+									<p> Go to the admin dashboard. Click on Users, then click on Add new. Here we can
+										create new management user. </p>
+									<img alt="" src="images/screenshot/management_user.png"><br><br>
+							</ol>
+							<hr>
 
-		<section id="member-member_list">
-            <h4><strong>3) Member</strong></h4>	
-			<p>Accountant can view all members.</p>
-			<img alt="member_list" src="images/accountant/member_list.png"><br>							
-            <hr>
-		</section>
+						</section>
 
-		<section id="Staff-member_list">
-            <h4><strong>4) Staff Member</strong></h4>	
-			<p>Accountant can view all Staff Member.</p>
-			<img alt="member_list" src="images/accountant/Staff_member_list.png"><br>							
-            <hr>
-		</section>
+						<section id="FAQ">
+							<h3><strong>M) FAQ</strong></h3>
 
-		<section id="Accountant_list">
-            <h4><strong>5) Accountant</strong></h4>	
-			<p>Accountant can view all Accountant.</p>
-			<img alt="Accountant_list" src="images/accountant/accountant_list.png"><br>							
-            <hr>
-		</section>
+							<p><strong>1) Prerequisite section.</strong></p>
+							<p><mark>Note*</mark> The Plugin works best on Cpanel/WHM-enabled hosting.
+								Usage/installation on Nginx / Plesk is not recommended and we will not be able to
+								provide support for the same.</p>
 
-		<section id="Gatekeeper_list">
-            <h4><strong>6) Gatekeeper</strong></h4>	
-			<p>Accountant can view all Gatekeeper.</p>
-			<img alt="Gatekeeper_list" src="images/accountant/gatekeeper_list.png"><br>							
-            <hr>
-		</section>
-
-		<section id="member-committee_member">
-            <h4><strong>7) Committee Member</strong></h4>	
-			<p>Accountant can see all committee member.</p>
-			<img alt="committee_member" src="images/accountant/committee_member.png"><br>							
-            <hr>
-		</section>
+							<p><strong>2) Don't See Apartment Management Login Page in page listing.</strong></p>
+							<p>Don't worry, You can add login form in two ways. </p>
+							<ol>
+								<li>By using shortcode [amgt_login] in a page</li>
+								<li>Using do_shortcode("[amgt_login]") at template page</li>
+							</ol>
+							<p>If you want to have any paid customization as per your requirements, you can contact us
+								on <a href="">sales@mojoomla.com</a>.</p>
+							<hr>
+						</section>
 
 
-		
-		<section id="accountant-notice-event">
-            <h4><strong>8) Notice </strong></h4>	
-			<p>Accountant can see  all notice.</p>
-			<img alt="notice_list" src="images/accountant/notice_list.png"><br>							
-            <hr>
-		</section>
+						<!-- start-footer-->
+						<div id="footer"> © 2024 Mojoomla All Rights Reserved. </div>
+						<!-- end-footer -->
+					</section>
 
-		<section id="accountant-notice-event">
-            <h4><strong>9) Event</strong></h4>	
-			<p>Accountant can see  all events.</p>
-			<img alt="notice_list" src="images/accountant/event_list.png"><br>							
-            <hr>
+				</div>
+				<!-- end-side-content -->
+			</div>
+			<!-- start-footer-->
+			<div id="footer-sm"> © 2024 Mojoomla All Rights Reserved. </div>
+			<!-- end-footer -->
+			<div class="white-space"></div>
 		</section>
-
-
-		<section id="accountant-complain">
-            <h4><strong>10) Complain</strong></h4>	
-			<p>Accountant can see  complaints and add their complain.</p>
-			<img alt="complaint_list" src="images/accountant/complaint_list.png"><br>							
-            <hr>
-		</section>
-
-
-
-		<section id="accountant-parking-manager">
-            <h4><strong>11) Parking Manager</strong></h4>	
-			<ol>
-				<h5><strong><li>Sloat List : </li></strong></h5	>
-				<p>Accountant can see all view slot .</p>
-				<img alt="parking_slot_list" src="images/accountant/slot_list.png"><br>
-				
-				<h5><strong><li>Assigned Sloat List :</li></strong></h5> 	
-				<p>Accountant can see all view their assigned slot.</p>
-				<img alt="parking_assign_slot_list" src="images/accountant/assign_slot_list.png"><br><br>
-			</ol>	
-            <hr>
-        </section>
-
-	
-        <section id="account_manage">
-            <h4><strong>12) Accounts</strong></h4>	
-           
-			<ol>
-				<h5><strong><li>Invoice List : </li></strong></h5	>
-				<p>Accountant can manage all invoice,generate invoice,add payment,add charges and add expenses. For more information <a href="#account_manage">click here</a>.</p>
-			    <img alt="accountant_invoice_list" src="images/accountant/new/invoice.png"><br>	
-				<h5><strong><li>Charges List:</li></strong></h5	> 
-				<p>Here you see can manage charges list.</p>
-				<img alt="invoice_charges_list" src="images/accountant/charge_list.png"><br><br>	
-				<h5><strong><li>Add Charges:</li></strong></h5	> 
-				<p>Here you can add member charges.</p>
-				<img alt="invoice_add_charges" src="images/accountant/add_charge.png"><br><br>	
-				<h5><strong><li>ExpenseList:</li></strong></h5	> 
-				<p>Here you see can manage Expenselist.</p>
-				<img alt="invoice_expence_list" src="images/accountant/expanse_list.png"><br><br>	
-				<h5><strong><li>Add Expence:</li></strong></h5	> 
-				<p>Here you add Expenseentry.</p>
-				<img alt="invoice_add_expence" src="images/accountant/add_expanse.png"><br><br>	
-			</ol>						
-            <hr>
-        </section>		
-		
-		<section id="accountant-message">
-            <h4><strong>13)Message</strong></h4>	
-			<p>Accountant can see their inbox,sent item and compose message.</p>
-			<img alt="message" src="images/accountant/message.png"><br>							
-            <hr>
-		</section>
-		<section id="accountant-profile">
-            <h4><strong>14)Profile</strong></h4>	
-			<p>Accountant can see their own profile.</p>
-			<img alt="profile" src="images/accountant/profile.png"><br>							
-            <hr>
-		</section>
-		<section id="accountant-faq">
-            <h4><strong>15)FAQ</strong></h4>	
-			<p>Accountant can see all faq.</p>
-			<img alt="faq" src="images/accountant/faq.png"><br>							
-            <hr>
-		</section>
-		<section id="accountant-society-rules">
-            <h4><strong>16)Society Rules</strong></h4>	
-			<p>Accountant  can see all society rules.</p>
-			<img alt="society_rules" src="images/accountant/society_rules.png"><br>							
-            <hr>
-		</section>
-		<section id="accountant-faq">
-            <h4><strong>17)Gallery</strong></h4>	
-			<p>Accountant  can see photo gallery.</p>
-			<img alt="gallery" src="images/accountant/gallery.png"><br>							
-            <hr>
-		</section>
-			
-        </section>
-		
-	<section id="gatekeeper-view">
-		<h3><strong>K) Gatekeeper View:</strong></h3>
-		<section id="gatekeeper-dashboard">
-            <h4><strong>1) Dashboard :</strong></h4>	
-			<p>Gatekeeper's dashboard.</p>
-			<img alt="dashboard" src="images/gatekeeper/dashboard.png"><br>							
-            <hr>
-		</section>
-
-		<section id="accountant-resident_unit">
-            <h4><strong>2) Resident Unit: </strong></h4>	
-			<p>Gatekeeper can only view all units and units member.</p>
-			<img alt="resident_unit" src="images/gatekeeper/resident_unit.png"><br>							
-            <hr>
-		</section>
-
-		<section id="accountant-member_list">
-            <h4><strong>3) Member</strong></h4>	
-			<p>Gatekeeper can view all members.</p>
-			<img alt="member_list" src="images/gatekeeper/member_list.png"><br>							
-            <hr>
-		</section>
-
-		<section id="accountant-member_list">
-            <h4><strong>4) Staff Member</strong></h4>	
-			<p>Gatekeeper can view all Staff Member.</p>
-			<img alt="member_list" src="images/gatekeeper/Staff_member_list.png"><br>							
-            <hr>
-		</section>
-
-		<section id="accountant-member_list">
-            <h4><strong>5) Accountant</strong></h4>	
-			<p>Gatekeeper can view all Accountant.</p>
-			<img alt="Accountant_list" src="images/gatekeeper/accountant_list.png"><br>							
-            <hr>
-		</section>
-
-		<section id="accountant-member_list">
-            <h4><strong>6) Gatekeeper</strong></h4>	
-			<p>Gatekeeper can view all Gatekeeper.</p>
-			<img alt="Gatekeeper_list" src="images/gatekeeper/gatekeeper_list.png"><br>							
-            <hr>
-		</section>
-
-		<section id="accountant-member_list">
-            <h4><strong>7) Committee Member</strong></h4>	
-			<p>Gatekeeper can view all committee member.</p>
-			<img alt="committee_member" src="images/gatekeeper/committee_member.png"><br>							
-            <hr>
-		</section>
-
-		
-		<section id="accountant-parking-manager">
-            <h4><strong>8) Parking Manager</strong></h4>	
-			<p>Gatekeeper can manage all parking management module.For more information<a href="#parkingmanage">Click here</a>..</p>
-			<img alt="parking_management" src="images/gatekeeper/parking_management.png"><br>							
-            <hr>
-		</section>
-		
-		<section id="accountant-parking-manager">
-            <h4><strong>9) Visitor Management</strong></h4>	
-			<p>Gatekeeper can manage all visitor management module.For more information<a href="#visitor_manage11">Click here</a></p>
-			<img alt="visitor_management" src="images/gatekeeper/visitor_management.png"><br>							
-            <hr>
-
-			<h4><strong><li> Print Visitor Request Details :</li></strong></h5	> 
-			<p>Gatekeeper can Print Approved Visitor Request Details .</p>
-			<img alt="Manage Gates" src="images/screenshot/view_request-details.png"><br><br>
-		</section>
-		
-	</section>
-		
-          <section id="FAQ">
-		  <h3><strong>L) FAQ</strong></h3>
-		  
-		  <p><strong>1) Prerequisite section.</strong></p>
-		  <p><mark>Note*</mark> The Plugin works best on Cpanel/WHM-enabled hosting. Usage/installation on Nginx / Plesk is not recommended and we will not be able to provide support for the same.</p>
-
-          	<p><strong>2) Don't See Apartment Management Login Page in page listing.</strong></p>
-          	<p>Don't worry, You can add login form in two ways. </p>
-            <ol>
-            	<li>By using shortcode [amgt_login] in a page</li>
-                <li>Using do_shortcode("[amgt_login]") at template page</li>
-            </ol>   
-          	<p>If you want to have any paid customization as per your requirements, you can contact us on <a href="">sales@mojoomla.com</a>.</p>
-            <hr>
-          </section>
-		
-         
-                    <!-- start-footer-->
-          <div id="footer"> © 2023 Mojoomla All Rights Reserved. </div>
-          <!-- end-footer -->
-        </section>
-		
-      </div>
-      <!-- end-side-content -->
-    </div>
-    <!-- start-footer-->
-    <div id="footer-sm"> © 2023 Mojoomla All Rights Reserved. </div>
-    <!-- end-footer -->
-    <div class="white-space"></div>
-  </section>
-  <!-- container -->
-  <!-- end-footer -->
-  <span id="scroll-top"><a class="scrollup"></a></span> </div>
-<!-- end-wrap -->
-<!-- End Document
+		<!-- container -->
+		<!-- end-footer -->
+		<span id="scroll-top"><a class="scrollup"></a></span>
+	</div>
+	<!-- end-wrap -->
+	<!-- End Document
          ================================================== -->
-<script src="js/jquery.jcarousel.min.js"></script>
-<script type="text/javascript" src="js/doubletaptogo.js" ></script>
-<script type="text/javascript" src="js/cube-custom.js" ></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="js/doubletaptogo.js"></script>
+	<script type="text/javascript" src="js/cube-custom.js"></script>
 
 
 </body>
+
 </html>
