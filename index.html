@@ -64,6 +64,7 @@
 							<li><a href="#gatekeeper-view">Gatekeeper</a></li>
 							<li><a href="#management_user">Management</a></li>
 							<li><a href="#FAQ">FAQ</a></li>
+							<li><a href="#security">Security Concerns</a></li>
 						</ul>
 					</aside>
 				</div>
@@ -2234,6 +2235,44 @@
 							<hr>
 						</section>
 
+						<section id="security">
+							<h3><strong>N) Security Concerns</strong></h3>
+
+							<p><strong>1) .htaccess File Protection</strong></p>
+							<p>Add code in .htaccess</p>
+							<pre>1) Direct wordpress js css and image file call restriction</pre>
+							<p>
+								To enhance the security of your WordPress installation, add the following rules to your 
+								<code>.htaccess</code> file. These rules help prevent unauthorized users from directly 
+								accessing sensitive core directories such as <code>wp-admin/js</code>, <code>wp-admin/css</code>, 
+								and <code>wp-admin/images</code>, unless they are logged in. This helps protect internal 
+								admin assets and reduces the risk of exploitation.
+							</p>
+
+							<pre><code>
+						# Protect WordPress core admin assets
+						&lt;IfModule mod_rewrite.c&gt;
+							RewriteEngine On
+							# Block direct access to wp-admin JS, CSS, and images for non-logged-in users
+							RewriteCond %{REQUEST_URI} ^/ams-old/wp-admin/(js|css|images)/ [NC]
+							RewriteCond %{HTTP_COOKIE} !wordpress_logged_in_ [NC]
+							RewriteRule ^ - [F,L]
+						&lt;/IfModule&gt;
+
+						# Disable directory listing to prevent file exposure
+						&lt;IfModule mod_autoindex.c&gt;
+							Options -Indexes
+						&lt;/IfModule&gt;
+						</code></pre>
+
+							<p>
+								<strong>Explanation:</strong><br>
+								• The first rule uses <code>mod_rewrite</code> to deny access to admin asset folders if the visitor isn’t logged in.<br>
+								• The second rule ensures directory browsing is disabled, preventing outsiders from viewing the contents of your folders.
+							</p>
+
+							<hr>
+						</section>
 
 						<!-- start-footer-->
 						<div id="footer"> © 2024 Mojoomla All Rights Reserved. </div>
